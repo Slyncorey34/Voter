@@ -14,13 +14,60 @@
  *= require_self
  */
 body {
+	font-family: Arial, sans-serif;
+}
+h2 {
+	font-family: Lobster, cursive;
+	color: #ef4d28;
+	margin: 40px, auto;
+}
+.hometext {
+	width: 40%;
+	height: 90px;
+	margin: 50px auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+}
+.results {
+	width: 30%;
+	height: auto;
+	border: 1px solid blue;
+	margin-left: 20%;
+}
+#log-btn {
+	/*border-radius: px;*/
+	margin: 20px 20px;
+}
+#log-btn a{
+	background-color: #3e4149;
+	color: #fff;
+	padding: 5px 25px;
+	border-radius: 10px;
+	margin-left: 45%;
+	text-decoration: none;
+}
+#sign-btn a {
+	background-color: #3e4149;
+	color: #fff;
+	padding: 5px 25px;
+	border-radius: 10px;
+	margin-left: 45%;
+	text-decoration: none;
+
 
 }
-
-
+.quiz-container {
+	width: 60%;
+	height: auto;
+	margin-left: 20%;
+	border: 1px solid red;
+	}
 
 .sign-up-form {
-	border:1px solid black;
+	height: 300px;
 	width: 200px;
 	margin: 5px auto;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
@@ -28,3 +75,22 @@ body {
     0px 20px 20px rgba(0,0,0,0.05),
     0px 30px 20px rgba(0,0,0,0.05);
 }
+
+footer ul{
+	width: 200px;
+	padding: 20px;
+  	}
+
+footer li {
+	list-style-type: none; 
+	display: inline-block;
+	margin-left: 10%;
+	margin-bottom: -4%;
+	}
+
+footer a{
+	text-decoration: none; 
+  	font-weight: bold;
+  	margin: 45px;
+  	color: #3e4149;
+	}
