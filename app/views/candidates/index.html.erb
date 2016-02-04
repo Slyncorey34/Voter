@@ -1,2 +1,19 @@
+<<<<<<< HEAD
 <h1>Candidates#index</h1>
 <p>Find me in app/views/candidates/index.html.erb</p>
+=======
+<h1>Who wants to be a Commander-In-Chief?</h1>
+
+
+<% @candidates.each do |c| %>
+
+<%=c.fname %>
+<%=c.lname %>
+<%=image_tag c.avatar.url(:medium) %>
+
+<% end %>
+
+
+
+<!-- If statement to use after results of quiz -->
+>>>>>>> 826b0253533bffe70db00975e81abc53090267ea
