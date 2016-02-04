@@ -1,5 +1,9 @@
 class CandidatesController < ApplicationController
+
+#Marco Rubio, Ted Cruz, The Donald, Chris Christie, Jeb Bush, John Kasich, Ben Carson
+
   def index
+  	@candidates = Candidate.all
   	# How do we display only Reps or only Dems? partial view?
   end
 
