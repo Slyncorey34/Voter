@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-  
+
   end
 
   def create
@@ -10,9 +10,10 @@ class SessionsController < ApplicationController
 			redirect_to '/intro'
 		else
 			redirect_to new_session_path
-		end	
+		end
   end
 
   def destroy
+    @voter.delete
   end
 end

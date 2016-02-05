@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  get 'quiz/index'
+
+  get 'quiz/new'
+
+  get 'quiz/create'
+
+  get 'quiz/delete'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -12,7 +22,7 @@ Rails.application.routes.draw do
   get '/candidates/:id', to: 'candidates#show'
 
   get '/login', to: 'sessions#new'
-  post 'login', to: 'candidates#index'
+  post '/login', to: 'candidates#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -22,7 +32,6 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
 
-    resources :voters
     resources :voters
     resources :sessions
     resources :candidates
