@@ -12,29 +12,33 @@
 				<button class="start-button" tpye="button">START QUIZ</button>
 			</div>
 <!-- quiz form will go here -->
-<%= form_for @quiz do |q| %>
-<%=q.label :question1%>
-<%= q.check_box :answer1  %>
-<%=q.label :question%>
-<%= q.check_box :answer2  %>
-<%=q.label :question%>
-<%= q.check_box :answer3  %>
-<%=q.label :question%>
-<%= q.check_box :answer4  %>
-<%= q.submit %>
-<% end %>
 <!-- it will contain the question and answerws in the .question-containter and .answer-container + submit button  -->
+
+<%= form_for @quiz do |q| %>
+<%=q.label :question%>
+<%= q.check_box(:answer1)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer2)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer3)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer4)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer5)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer6)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer7)  %>
+<%= q.submit %>
+
+<% end %>
 
 		</div>
 	</div>
 
-
-<<<<<<< HEAD
 <!-- this page includes the quick liberal/conservative definitions and issues "spine"  --> -->
 
 <h1>What's the Difference?</h1>
-=======
->>>>>>> da1db8c1c563669deac0e22ace61b3e82e6aa045
 <h2>Poly Sci 101 text here</h2>
 
 <div class="quiz-container">
@@ -44,6 +48,7 @@
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
 </div>
+
 
 
 </div>
@@ -67,8 +72,3 @@
 
 
 <p>See what the 2016 Dem prez candids think...</p>
-
-<<<<<<< HEAD
-<!-- link to the dem index page
-=======
->>>>>>> da1db8c1c563669deac0e22ace61b3e82e6aa045
