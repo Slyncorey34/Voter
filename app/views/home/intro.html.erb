@@ -28,6 +28,24 @@
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
 </div>
 
+<%= form_for @quiz do |q| %>
+<%=q.label :question%>
+<%= q.check_box(:answer1)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer2)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer3)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer4)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer5)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer6)  %>
+<%=q.label :question%>
+<%= q.check_box(:answer7)  %>
+<%= q.submit %>
+
+<% end %>
 
 </div>
 <div class="results">

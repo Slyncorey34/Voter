@@ -7262,3 +7262,464 @@ Migrating to AddLibAndContoCandidates (20160205190947)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160205190947"]]
   [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2016-02-05 15:25:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 240ms (Views: 231.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:25:54 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:25:54 -0500
+
+
+Started GET "/assets/application.self-8641e9b052eddb37406601d65865f202c70e375ee22940706abd484425390470.js?body=1" for ::1 at 2016-02-05 15:25:54 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:25:54 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:25:54 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:25:54 -0500
+
+
+Started GET "/voters/new" for ::1 at 2016-02-05 15:25:56 -0500
+Processing by VotersController#new as HTML
+  Rendered voters/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 46ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/voters" for ::1 at 2016-02-05 15:26:01 -0500
+Processing by VotersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+VdprFe66n17RZvFegrcp1SGTUCpjrra96PBYQRpLh4VBj7RjYLxrmlCLhAZmYCVEbN2rECIRlOaxyR7eqbhA==", "voter"=>{"email"=>"d@d", "password"=>"[FILTERED]"}, "commit"=>"Create Voter"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "voters" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "d@d"], ["password", "1234"], ["created_at", "2016-02-05 20:26:01.989635"], ["updated_at", "2016-02-05 20:26:01.989635"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/intro
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:26:01 -0500
+Processing by HomeController#intro as HTML
+  Rendered home/intro.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/app/views/home/intro.html.erb:71: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/app/views/home/intro.html.erb:73: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/home/intro.html.erb:71: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/home/intro.html.erb:73: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.7ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:26:16 -0500
+Processing by HomeController#intro as HTML
+  Rendered home/intro.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    28: 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    29: </div>
+    30: 
+    31: <%= form_for @voter do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box :answer1  %>
+    34: <%=q.label :question%>
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___2108700125898022404_70186205820820'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.5ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:28:14 -0500
+Processing by HomeController#intro as HTML
+  Rendered home/intro.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    28: 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    29: </div>
+    30: 
+    31: <%= form_for @voter do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box :answer1  %>
+    34: <%=q.label :question%>
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___2108700125898022404_70186205820820'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.6ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:28:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#intro as HTML
+  Rendered home/intro.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    28: 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    29: </div>
+    30: 
+    31: <%= form_for @voter do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box :answer1  %>
+    34: <%=q.label :question%>
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___548719462322952009_70320643009120'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.8ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:28:42 -0500
+Processing by HomeController#intro as HTML
+  Rendered home/intro.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    28: 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    29: </div>
+    30: 
+    31: <%= form_for @voter do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box :answer1  %>
+    34: <%=q.label :question%>
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___548719462322952009_70320643009120'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.8ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:30:19 -0500
+Processing by HomeController#intro as HTML
+  Rendered home/intro.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    28: 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    29: </div>
+    30: 
+    31: <%= form_for @voter do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box :answer1  %>
+    34: <%=q.label :question%>
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___548719462322952009_70320643009120'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.3ms)
+
+
+Started GET "/voters/new" for ::1 at 2016-02-05 15:30:23 -0500
+Processing by VotersController#new as HTML
+  Rendered voters/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 174ms (Views: 167.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:30:23 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:30:23 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:30:23 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:30:23 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:30:23 -0500
+
+
+Started GET "/assets/application.self-8641e9b052eddb37406601d65865f202c70e375ee22940706abd484425390470.js?body=1" for ::1 at 2016-02-05 15:30:23 -0500
+
+
+Started POST "/voters" for ::1 at 2016-02-05 15:30:28 -0500
+Processing by VotersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w/ojyIPTMSUK/H6qwl298q25y25hGL69aKjv229Xt4qgS2aVdLvRSka0YH2X0/CCZK0fgdK8pU9NHXxPBqyItg==", "voter"=>{"email"=>"a@a", "password"=>"[FILTERED]"}, "commit"=>"Create Voter"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "voters" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "a@a"], ["password", "1234"], ["created_at", "2016-02-05 20:30:28.039375"], ["updated_at", "2016-02-05 20:30:28.039375"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/intro
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:30:28 -0500
+Processing by HomeController#intro as HTML
+  [1m[36mVoter Load (0.2ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered home/intro.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `answer1' for #<Voter:0x007fe9a02aad28>):
+    30: 
+    31: <%= form_for @voter do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box :answer1  %>
+    34: <%=q.label :question%>
+    35: <%= q.check_box :answer2  %>
+    36: <%=q.label :question%>
+  app/views/home/intro.html.erb:33:in `block in _app_views_home_intro_html_erb___548719462322952009_70320643009120'
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___548719462322952009_70320643009120'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (84.3ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:36:40 -0500
+Processing by HomeController#intro as HTML
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered home/intro.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `answer1' for #<Voter:0x007fe9a03f00c0>):
+    30: 
+    31: <%= form_for @voter do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box(:answer1)  %>
+    34: <%=q.label :question%>
+    35: <%= q.check_box(:answer2)  %>
+    36: <%=q.label :question%>
+  app/views/home/intro.html.erb:33:in `block in _app_views_home_intro_html_erb___548719462322952009_70320687665920'
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___548719462322952009_70320687665920'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.1ms)
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT  "candidates".* FROM "candidates"  ORDER BY "candidates"."id" DESC LIMIT 1[0m
+  [1m[35mCandidate Load (0.3ms)[0m  SELECT "candidates".* FROM "candidates"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "candidates" WHERE "candidates"."id" = ?  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/001/original/Donald_August_19_(cropped).jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/001/medium/Donald_August_19_(cropped).jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/001/thumb/Donald_August_19_(cropped).jpg
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "candidates" WHERE "candidates"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  commit transaction
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/002/original/AP_hillary_clinton_jtm_150418_16x9_992.jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/002/medium/AP_hillary_clinton_jtm_150418_16x9_992.jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/002/thumb/AP_hillary_clinton_jtm_150418_16x9_992.jpg
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "candidates" WHERE "candidates"."id" = ?  [["id", 3]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/003/original/Bernie_Sanders.jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/003/medium/Bernie_Sanders.jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/003/thumb/Bernie_Sanders.jpg
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "candidates" WHERE "candidates"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  commit transaction
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/004/original/150325233445-marco-rubio-head-shot-exlarge-169.jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/004/medium/150325233445-marco-rubio-head-shot-exlarge-169.jpg
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/004/thumb/150325233445-marco-rubio-head-shot-exlarge-169.jpg
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "candidates" WHERE "candidates"."id" = ?  [["id", 5]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/005/original/Ted_Cruz_14.png
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/005/medium/Ted_Cruz_14.png
+[paperclip] deleting /Users/dylanzklett/Desktop/NYCDA/AllCoursework/Week_8/Friday/collab/Voter/public/system/candidates/avatars/000/000/005/thumb/Ted_Cruz_14.png
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-94374-gztdfv.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-94374-1cntjfz.jpg[0]' 2>/dev/null
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-1f4n293.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-1sdocng.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-1sdocng.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-1sdocng.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/cdddac267a2dd64a7d9315516bcf265120160205-96500-vp78i7'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-1sdocng.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-1sdocng.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-1sdocng.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/cdddac267a2dd64a7d9315516bcf265120160205-96500-1qa33d6'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96500-19k22px.jpg'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Donald"], ["lname", "Trump"], ["city", "Manhattan"], ["state", "NY"], ["birthday", 1946], ["party", "R"], ["avatar_file_name", "Donald_August_19_(cropped).jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 57173], ["avatar_updated_at", "2016-02-05 20:49:53.619564"], ["conVal", 99], ["libVal", 100], ["created_at", "2016-02-05 20:49:53.737213"], ["updated_at", "2016-02-05 20:49:53.737213"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-rxjlx1.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-13a0f7v.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-13a0f7v.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-13a0f7v.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3ba876718d8e32b4409ccad36adef60220160205-96500-1j1lvuy'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-13a0f7v.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-13a0f7v.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-13a0f7v.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3ba876718d8e32b4409ccad36adef60220160205-96500-u4job2'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96500-i4mabm.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Hillary"], ["lname", "Clinton"], ["city", "Chappaqua"], ["state", "NY"], ["birthday", 1947], ["party", "D"], ["avatar_file_name", "AP_hillary_clinton_jtm_150418_16x9_992.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 51947], ["avatar_updated_at", "2016-02-05 20:49:54.394396"], ["conVal", 20], ["libVal", 80], ["created_at", "2016-02-05 20:49:54.549369"], ["updated_at", "2016-02-05 20:49:54.549369"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-1r67okr.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-15tqrs1.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-15tqrs1.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-15tqrs1.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/4b2e7a662207d59e9e702d75495603b520160205-96500-1mfju6u'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-15tqrs1.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-15tqrs1.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-15tqrs1.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/4b2e7a662207d59e9e702d75495603b520160205-96500-1xdja34'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96500-1gyze0m.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Bernie"], ["lname", "Sanders"], ["city", "Burlington"], ["state", "VT"], ["birthday", 1941], ["party", "D"], ["avatar_file_name", "Bernie_Sanders.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 282297], ["avatar_updated_at", "2016-02-05 20:49:54.895701"], ["conVal", 1], ["libVal", 99], ["created_at", "2016-02-05 20:49:55.108188"], ["updated_at", "2016-02-05 20:49:55.108188"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1v9pwy6.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1adc14j.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1adc14j.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1adc14j.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/09578f3e4af56ef4ec859816f5aa04ce20160205-96500-afmkj8'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1adc14j.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1adc14j.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1adc14j.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/09578f3e4af56ef4ec859816f5aa04ce20160205-96500-1tbmern'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96500-1dpnz3a.jpg'
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "libVal", "conVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Marco"], ["lname", "Rubio"], ["city", "West Miami"], ["state", "FL"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "150325233445-marco-rubio-head-shot-exlarge-169.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 43969], ["avatar_updated_at", "2016-02-05 20:49:55.669925"], ["libVal", 30], ["conVal", 70], ["created_at", "2016-02-05 20:49:55.802046"], ["updated_at", "2016-02-05 20:49:55.802046"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96500-cv1vtm.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96500-16bbmb5.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96500-16bbmb5.png[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96500-16bbmb5.png[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/309bb34c553fd500acea0d82690d846e20160205-96500-xcvj6w'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96500-16bbmb5.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96500-16bbmb5.png[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96500-16bbmb5.png[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/309bb34c553fd500acea0d82690d846e20160205-96500-1gco77l'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-ji1g0k.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-oxvtvc.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-oxvtvc.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-oxvtvc.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/252e24c9f9d9835e2262828dcb86dcf620160205-96558-1y5mizc'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-oxvtvc.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-oxvtvc.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-oxvtvc.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/252e24c9f9d9835e2262828dcb86dcf620160205-96558-1i2a5a'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/28270d032b36d80939a39657d6510acd20160205-96558-1q3eyjw.jpg'
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Donald"], ["lname", "Trump"], ["city", "Manhattan"], ["state", "NY"], ["birthday", 1946], ["party", "R"], ["avatar_file_name", "Donald_August_19_(cropped).jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 57173], ["avatar_updated_at", "2016-02-05 20:50:33.081287"], ["conVal", 99], ["libVal", 100], ["created_at", "2016-02-05 20:50:33.198579"], ["updated_at", "2016-02-05 20:50:33.198579"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-17rlcqy.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-11cnstd.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-11cnstd.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-11cnstd.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/91cadcd8144a4ecc21391052df3a828120160205-96558-1uzohoe'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-11cnstd.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-11cnstd.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-11cnstd.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/91cadcd8144a4ecc21391052df3a828120160205-96558-1pkc91c'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/f813a2f2859452c11e758ff3322e292b20160205-96558-emye7r.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Hillary"], ["lname", "Clinton"], ["city", "Chappaqua"], ["state", "NY"], ["birthday", 1947], ["party", "D"], ["avatar_file_name", "AP_hillary_clinton_jtm_150418_16x9_992.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 51947], ["avatar_updated_at", "2016-02-05 20:50:34.021236"], ["conVal", 20], ["libVal", 80], ["created_at", "2016-02-05 20:50:34.178210"], ["updated_at", "2016-02-05 20:50:34.178210"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-1tseref.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-ih86vi.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-ih86vi.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-ih86vi.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/77cef383353d580ca623c386e1a5467a20160205-96558-d8uxi7'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-ih86vi.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-ih86vi.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-ih86vi.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/77cef383353d580ca623c386e1a5467a20160205-96558-x464ns'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/5f17100321b761e56b381d17603a7f7b20160205-96558-whbaft.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Bernie"], ["lname", "Sanders"], ["city", "Burlington"], ["state", "VT"], ["birthday", 1941], ["party", "D"], ["avatar_file_name", "Bernie_Sanders.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 282297], ["avatar_updated_at", "2016-02-05 20:50:34.496413"], ["conVal", 1], ["libVal", 99], ["created_at", "2016-02-05 20:50:34.689771"], ["updated_at", "2016-02-05 20:50:34.689771"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-1x5n6xb.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-98wlt2.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-98wlt2.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-98wlt2.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/4b9a4c209ea098bcce9b09a5999b5c5920160205-96558-1c7ajui'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-98wlt2.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-98wlt2.jpg[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-98wlt2.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/4b9a4c209ea098bcce9b09a5999b5c5920160205-96558-ox1rlq'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/26971f96ee32d5840f48cedc60f49c2120160205-96558-16upctp.jpg'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "libVal", "conVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Marco"], ["lname", "Rubio"], ["city", "West Miami"], ["state", "FL"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "150325233445-marco-rubio-head-shot-exlarge-169.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 43969], ["avatar_updated_at", "2016-02-05 20:50:35.212460"], ["libVal", 30], ["conVal", 70], ["created_at", "2016-02-05 20:50:35.345392"], ["updated_at", "2016-02-05 20:50:35.345392"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-1isduqz.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-fba564.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-fba564.png[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-fba564.png[0]' -auto-orient -resize "300x300>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3145ae684baabb94bb82f2fa0f4197bf20160205-96558-hbtej5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-fba564.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-fba564.png[0]'
+Command :: convert '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-fba564.png[0]' -auto-orient -resize "100x100>" '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3145ae684baabb94bb82f2fa0f4197bf20160205-96558-1lq34op'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160205-96558-1msn27w.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "libVal", "conVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Ted"], ["lname", "Cruz"], ["city", "Houston"], ["state", "TX"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "Ted_Cruz_14.png"], ["avatar_content_type", "image/png"], ["avatar_file_size", 351323], ["avatar_updated_at", "2016-02-05 20:50:35.895746"], ["libVal", 15], ["conVal", 85], ["created_at", "2016-02-05 20:50:36.083672"], ["updated_at", "2016-02-05 20:50:36.083672"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates"  ORDER BY "candidates"."id" DESC LIMIT 1[0m
