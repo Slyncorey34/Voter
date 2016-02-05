@@ -13,16 +13,98 @@
  *= require_tree .
  *= require_self
  */
-<<<<<<< HEAD
-=======
+
 body {
+	font-family: Arial, sans-serif;
+}
+h2 {
+	font-family: Lobster, cursive;
+	color: #ef4d28;
+	margin: 40px, auto;
+}
+.welcome-wrap {
+	/*background-image: url("../assets/vintage_flag.jpg");*/
+	background-repeat: no-repeat;
+	height: 500px;
+}
+.hometext {
+	width: 40%;
+	height: 180px;
+	margin-left: 30%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+}
+.hometext p{
+	margin-left: 1%;
+	text-align: center;
+	font-weight: bold;
+	color: grey;
+	width
+}
+.results {
+	width: 30%;
+	height: auto;
+	border: 1px solid blue;
+	margin-left: 20%;
+}
+#log-btn {
+	margin: 40px 80px;
 
 }
+#log-btn a{
+	background-color: cadetblue;
+	color: #fff;
+	padding: 5px 25px;
+	border-radius: 10px;
+	margin-left: 25%;
+	text-decoration: none;
+}
+#sign-btn {
+	/*margin-top: 10%;*/
+}
+#sign-btn a {
+	background-color: #3e4149;
+	color: #fff;
+	padding: 5px 25px;
+	border-radius: 10px;
+	margin-left: 35%;
+	text-decoration: none;
 
 
+}
+.quiz-container {
+	width: 60%;
+	height: auto;
+	margin-left: 20%;
+	border: 1px solid red;
+	}
 
 .sign-up-form {
-	border:1px solid black;
+	height: 120px;
+	width: 260px;
+	margin: 30px auto;
+	padding: 25px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+}
+.sign-up-form input {
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+}
+h3 {
+	color: cadetblue;
+	width: 100px;
+	margin-left: 45%;
+}
+.login-form {
+	height: 200px;
 	width: 200px;
 	margin: 5px auto;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
@@ -30,4 +112,42 @@ body {
     0px 20px 20px rgba(0,0,0,0.05),
     0px 30px 20px rgba(0,0,0,0.05);
 }
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
+
+.prezboard {
+	width: 70%;
+	margin-left: 15%
+}
+
+.prez img {
+	height:	100px;
+	border-radius: 50%;
+	display: inline-block;
+	min-width: 80px;
+	padding: 10px;
+	margin-bottom: 7px;
+	margin-right: 1%;
+	margin-left: 1%;
+	position: relative;
+}
+
+
+
+footer ul{
+	width: 90%;
+	margin-top: 10%;
+  	}
+
+footer li {
+	list-style-type: none; 
+	display: inline-block;
+	margin-left: 5%;
+	margin-bottom: -4%;
+	}
+
+footer a{
+	text-decoration: none; 
+  	font-weight: bold;
+  	margin: 80px;
+  	color: #3e4149;
+	}
+

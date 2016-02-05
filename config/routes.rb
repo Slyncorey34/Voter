@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
 
   get 'quiz/question'
@@ -11,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'candidates/show'
 
+=======
+>>>>>>> da1db8c1c563669deac0e22ace61b3e82e6aa045
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -18,8 +21,18 @@ Rails.application.routes.draw do
   root 'home#welcome'
 
   get '/intro', to: 'home#intro'
+
   get '/candidates', to: 'candidates#index'
+<<<<<<< HEAD
   get '/candidates/:id', to: 'candidates#show(:id)'
+=======
+  get '/candidates/:id', to: 'candidates#show'
+
+  get '/login', to: 'sessions#new'
+  post 'login', to: 'candidates#index'
+
+
+>>>>>>> da1db8c1c563669deac0e22ace61b3e82e6aa045
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -27,10 +40,18 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
+<<<<<<< HEAD
     resources :voters
     resources :voters, except: [:show]
     resources :sessions
     resources :candidates
+=======
+
+
+    resources :voters, except: [:show]
+    resources :sessions
+    # resources :candidates
+>>>>>>> da1db8c1c563669deac0e22ace61b3e82e6aa045
 
   # Example resource route with options:
   #   resources :products do

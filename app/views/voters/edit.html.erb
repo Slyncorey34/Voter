@@ -1,2 +1,10 @@
-<h1>Voter#edit</h1>
-<p>Find me in app/views/voter/edit.html.erb</p>
+<p>Update your email address in the form below</p>
+	<%=form_for @voter, method: :patch do |f|%>	
+		<%=f.label :email %>
+		<%=f.text_field :email%>
+		<%=f.label :password%>
+		<%=f.password_field :password%>
+		<%=f.submit "Update"%> 
+	<%end%>
+<!-- <p>Or, delete your account</p> -->
+<%=link_to 'Delete', voter_path, method: :delete %>
