@@ -1,11 +1,23 @@
+
 <h1>This is the welcome/landing page</h1>
-<<<<<<< HEAD
+
 <%= link_to 'Sign up', new_voter_path%>
-=======
+
 <!--  -->
 <%=link_to 'Log In', new_session_path%></p>
 
-<!-- link to sign up form -->
-<%= link_to 'Sign up', new_voter_path%>
+<div class="hometext">
+	<p>Match with candidates on the issues you 	care about most.
+	</p>
+</div>
 
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
+
+	<div id="log-btn">
+		<%=link_to 'Log In', login_path%>
+	</div>
+
+	<div id="sign-btn">
+		<%= link_to 'Sign up', new_voter_path%>
+	</div>
+
+
