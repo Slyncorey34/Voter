@@ -7,23 +7,18 @@ class VotersController < ApplicationController
 
   	@voter = Voter.new(voter_params)
   	if @voter.save
-<<<<<<< HEAD
-  		redirect_to voter_path(@voter)
-=======
-  		redirect_to '/intro'
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
- 	else
+
+  	redirect_to '/intro'
+ 	  else
  		render 'new' 
   	end
   end
 
-<<<<<<< HEAD
+
   def show
   	@voter = Voter.find(params[:id])
   end
-=======
 
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
 
   def edit
   	@voter = Voter.find(params[:id])
@@ -32,11 +27,8 @@ class VotersController < ApplicationController
   def update
   	@voter = Voter.find(params[:id])
   	if @voter.update_attributes(voter_params)
-<<<<<<< HEAD
-  		redirect_to voter_path(@voter)
-=======
+
   		redirect_to intro_path
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
   	else
   		render edit_voter_path
   	end

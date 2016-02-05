@@ -1,13 +1,10 @@
 class CandidatesController < ApplicationController
-<<<<<<< HEAD
-  def index
-=======
+
 
 #Marco Rubio, Ted Cruz, The Donald, Chris Christie, Jeb Bush, John Kasich, Ben Carson
 
   def index
   	@candidates = Candidate.all
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
   	# How do we display only Reps or only Dems? partial view?
   end
 
@@ -15,8 +12,7 @@ class CandidatesController < ApplicationController
   	@candidate = Candidate.find(params[:lname])
   	# how do we display a candidate without doing it by id?
   end
-<<<<<<< HEAD
-=======
+
 
   private 
 
@@ -25,5 +21,5 @@ class CandidatesController < ApplicationController
 
   end  
 
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
+
 end
