@@ -1,12 +1,4 @@
 Rails.application.routes.draw do
- 
-
-
-  get 'candidates/index'
-
-  get 'candidates/show'
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,7 +8,7 @@ Rails.application.routes.draw do
   get '/intro', to: 'home#intro'
 
   get '/candidates', to: 'candidates#index'
-  get '/candidates/:id', to: 'candidates#show(:id)'
+  get '/candidates/:id', to: 'candidates#show'
 
   get '/login', to: 'sessions#new'
   post 'login', to: 'home#intro'
@@ -32,7 +24,7 @@ Rails.application.routes.draw do
 
     resources :voters, except: [:show]
     resources :sessions
-    resources :candidates
+    # resources :candidates
 
   # Example resource route with options:
   #   resources :products do
