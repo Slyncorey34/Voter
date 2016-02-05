@@ -78,7 +78,11 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+<<<<<<< HEAD
+    paperclip (4.3.2)
+=======
     paperclip (4.3.4)
+>>>>>>> da1db8c1c563669deac0e22ace61b3e82e6aa045
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       cocaine (~> 0.5.5)

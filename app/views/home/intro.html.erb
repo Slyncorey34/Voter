@@ -14,20 +14,6 @@
 <!-- quiz form will go here -->
 <!-- it will contain the question and answerws in the .question-containter and .answer-container + submit button  -->
 
-		</div>
-	</div>
-
-
-<h2>Poly Sci 101 text here</h2>
-
-<div class="quiz-container">
-	<p>Some text about the quiz and the 6 issues quizzes go here.</p> 
-	<br>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-</div>
-
 <%= form_for @quiz do |q| %>
 <%=q.label :question%>
 <%= q.check_box(:answer1)  %>
@@ -46,6 +32,24 @@
 <%= q.submit %>
 
 <% end %>
+
+		</div>
+	</div>
+
+<!-- this page includes the quick liberal/conservative definitions and issues "spine"  --> -->
+
+<h1>What's the Difference?</h1>
+<h2>Poly Sci 101 text here</h2>
+
+<div class="quiz-container">
+	<p>Some text about the quiz and the 6 issues quizzes go here.</p> 
+	<br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+</div>
+
+
 
 </div>
 <div class="results">
@@ -68,4 +72,3 @@
 
 
 <p>See what the 2016 Dem prez candids think...</p>
-
