@@ -7723,3 +7723,35 @@ Command :: file -b --mime '/var/folders/xs/5qz1glwj30v51rwpxhyclw880000gn/T/3814
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "libVal", "conVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Ted"], ["lname", "Cruz"], ["city", "Houston"], ["state", "TX"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "Ted_Cruz_14.png"], ["avatar_content_type", "image/png"], ["avatar_file_size", 351323], ["avatar_updated_at", "2016-02-05 20:50:35.895746"], ["libVal", 15], ["conVal", 85], ["created_at", "2016-02-05 20:50:36.083672"], ["updated_at", "2016-02-05 20:50:36.083672"]]
   [1m[35m (0.6ms)[0m  commit transaction
   [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates"  ORDER BY "candidates"."id" DESC LIMIT 1[0m
+
+
+Started GET "/intro" for ::1 at 2016-02-05 15:52:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#intro as HTML
+  [1m[35mVoter Load (0.2ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered home/intro.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    28: 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    29: </div>
+    30: 
+    31: <%= form_for @quiz do |q| %>
+    32: <%=q.label :question%>
+    33: <%= q.check_box(:answer1)  %>
+    34: <%=q.label :question%>
+  app/views/home/intro.html.erb:31:in `_app_views_home_intro_html_erb___1662146331099173547_70122676845480'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.7ms)
