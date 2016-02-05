@@ -1,16 +1,14 @@
+<div class="welcome-wrap">
+	<div class="hometext">
+		<p>Match with candidates on the issues you care about most.
+		</p>
 
-<div class="hometext">
-	<p>Match with candidates on the issues you 	care about most.
-	</p>
-</div>
+		<div id="log-btn">
+			<%=link_to 'Log In', candidates_path%>
+		</div>
 
-
-	<div id="log-btn">
-		<%=link_to 'Log In', login_path%>
+		<div id="sign-btn">
+			<%= link_to 'Sign up', new_voter_path%>
+		</div>
 	</div>
-
-	<div id="sign-btn">
-		<%= link_to 'Sign up', new_voter_path%>
-	</div>
-
-
+</div>	

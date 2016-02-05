@@ -1,14 +1,15 @@
-<h1>Who wants to be a Commander-In-Chief?</h1>
+<h3>Who wants to be a Commander-In-Chief?</h3>
 
+<div class="prezboard">
+	<div class="prez">
+		<% @candidates.each do |c| %>
 
-<% @candidates.each do |c| %>
-
-<%=c.fname %>
-<%=c.lname %>
-<%=image_tag c.avatar.url(:medium) %>
-
-<% end %>
-
+		<%=c.fname %>
+		<%=c.lname %>
+		<%=image_tag c.avatar.url(:medium) %>
+		<% end %>
+	</div>
+</div>
 
 
 

@@ -9,7 +9,7 @@ class VotersController < ApplicationController
   	if @voter.save
 
   	redirect_to '/intro'
- 	else
+ 	  else
  		render 'new' 
   	end
   end

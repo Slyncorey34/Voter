@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get '/candidates/:id', to: 'candidates#show'
 
   get '/login', to: 'sessions#new'
-  post 'login', to: 'home#intro'
+  post 'login', to: 'candidates#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

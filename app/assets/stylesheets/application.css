@@ -22,15 +22,28 @@ h2 {
 	color: #ef4d28;
 	margin: 40px, auto;
 }
+.welcome-wrap {
+	/*background-image: url("../assets/vintage_flag.jpg");*/
+	background-repeat: no-repeat;
+	height: 500px;
+}
 .hometext {
 	width: 40%;
-	height: 90px;
-	margin: 50px auto;
+	height: 180px;
+	margin-left: 30%;
+	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
     0px 10px 20px rgba(0,0,0,0.05),
     0px 20px 20px rgba(0,0,0,0.05),
     0px 30px 20px rgba(0,0,0,0.05);
+}
+.hometext p{
+	margin-left: 1%;
+	text-align: center;
+	font-weight: bold;
+	color: grey;
+	width
 }
 .results {
 	width: 30%;
@@ -39,23 +52,26 @@ h2 {
 	margin-left: 20%;
 }
 #log-btn {
-	/*border-radius: px;*/
-	margin: 20px 20px;
+	margin: 40px 80px;
+
 }
 #log-btn a{
-	background-color: #3e4149;
+	background-color: cadetblue;
 	color: #fff;
 	padding: 5px 25px;
 	border-radius: 10px;
-	margin-left: 45%;
+	margin-left: 25%;
 	text-decoration: none;
+}
+#sign-btn {
+	/*margin-top: 10%;*/
 }
 #sign-btn a {
 	background-color: #3e4149;
 	color: #fff;
 	padding: 5px 25px;
 	border-radius: 10px;
-	margin-left: 45%;
+	margin-left: 35%;
 	text-decoration: none;
 
 
@@ -68,13 +84,24 @@ h2 {
 	}
 
 .sign-up-form {
-	height: 200px;
-	width: 200px;
-	margin: 5px auto;
+	height: 120px;
+	width: 260px;
+	margin: 30px auto;
+	padding: 25px;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
     0px 10px 20px rgba(0,0,0,0.05),
     0px 20px 20px rgba(0,0,0,0.05),
     0px 30px 20px rgba(0,0,0,0.05);
+}
+.sign-up-form input {
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+}
+h3 {
+	color: cadetblue;
+	width: 100px;
+	margin-left: 45%;
 }
 .login-form {
 	height: 200px;
@@ -86,22 +113,41 @@ h2 {
     0px 30px 20px rgba(0,0,0,0.05);
 }
 
+.prezboard {
+	width: 70%;
+	margin-left: 15%
+}
+
+.prez img {
+	height:	100px;
+	border-radius: 50%;
+	display: inline-block;
+	min-width: 80px;
+	padding: 10px;
+	margin-bottom: 7px;
+	margin-right: 1%;
+	margin-left: 1%;
+	position: relative;
+}
+
+
+
 footer ul{
-	width: 200px;
-	padding: 20px;
+	width: 90%;
+	margin-top: 10%;
   	}
 
 footer li {
 	list-style-type: none; 
 	display: inline-block;
-	margin-left: 10%;
+	margin-left: 5%;
 	margin-bottom: -4%;
 	}
 
 footer a{
 	text-decoration: none; 
   	font-weight: bold;
-  	margin: 45px;
+  	margin: 80px;
   	color: #3e4149;
 	}
 
