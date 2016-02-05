@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -13,6 +12,17 @@
 				<button class="start-button" tpye="button">START QUIZ</button>
 			</div>
 <!-- quiz form will go here -->
+<%= form_for @quiz do |q| %>
+<%=q.label :question1%>
+<%= q.check_box :answer1  %>
+<%=q.label :question%>
+<%= q.check_box :answer2  %>
+<%=q.label :question%>
+<%= q.check_box :answer3  %>
+<%=q.label :question%>
+<%= q.check_box :answer4  %>
+<%= q.submit %>
+<% end %>
 <!-- it will contain the question and answerws in the .question-containter and .answer-container + submit button  -->
 
 		</div>
@@ -20,9 +30,7 @@
 
 
 <!-- this page includes the quick liberal/conservative definitions and issues "spine"  --> -->
-=======
-this page includes the quick liberal/conservative definitions and issues "spine"  -->
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
+
 <h1>What's the Difference?</h1>
 <h2>Poly Sci 101 text here</h2>
 <p>Liberalism 101 text here</p>
@@ -53,8 +61,5 @@ this page includes the quick liberal/conservative definitions and issues "spine"
 <!-- link to the rep index page -->
 
 <p>See what the 2016 Dem prez candids think...</p>
-<<<<<<< HEAD
+
 <!-- link to the dem index page
-=======
-<!-- link to the dem index page
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
