@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20160204002137) do
-=======
 ActiveRecord::Schema.define(version: 20160204204733) do
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
 
   create_table "candidates", force: :cascade do |t|
     t.string   "fname"
@@ -24,17 +20,12 @@ ActiveRecord::Schema.define(version: 20160204204733) do
     t.string   "state"
     t.date     "birthday"
     t.string   "party"
-<<<<<<< HEAD
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-=======
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
->>>>>>> 826b0253533bffe70db00975e81abc53090267ea
   end
 
   create_table "voters", force: :cascade do |t|
