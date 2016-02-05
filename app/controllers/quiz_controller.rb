@@ -10,10 +10,10 @@ class QuizController < ApplicationController
 
   def create
     @quiz = Quiz.create(params)
-    redirect_to:show
+    redirect_to :show
   end
 
-  def show =
+  def show
     @quiz = Quiz.where(id: params[:id]).first
   end
 

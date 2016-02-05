@@ -12,12 +12,13 @@
 				<button class="start-button" tpye="button">START QUIZ</button>
 			</div>
 <!-- quiz form will go here -->
-<%= form_for @quiz do |q| %>
+
+<%= form_for @quiz, url: {action: "create"} do |q| %>
 <%= q.check_box :answer1  %>
 <%= q.check_box :answer2  %>
 <%= q.check_box :answer3  %>
 <%= q.check_box :answer4  %>
-<%= q.submit("get my results") %>
+<%= q.button :submit %>
 <% end %>
 
 <!-- <%= simple_form_for @quiz do |f| %>

@@ -64,12 +64,12 @@ Migrations are pending. To resolve this issue, run:
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
 Migrating to CreateVoters (20160203212024)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35m (0.7ms)[0m  CREATE TABLE "voters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.7ms)[0m  CREATE TABLE "voters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)
   [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160203212024"]]
   [1m[35m (2.7ms)[0m  commit transaction
 Migrating to CreateCandidates (20160204002137)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35m (0.5ms)[0m  CREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar, "lname" varchar, "city" varchar, "state" varchar, "birthday" date, "party" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.5ms)[0m  CREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar, "lname" varchar, "city" varchar, "state" varchar, "birthday" date, "party" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160204002137"]]
   [1m[35m (2.1ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
@@ -85,7 +85,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <%=link_to 'Log In', voter_path%></p>
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__328105191698407666_70341557940420'
@@ -115,7 +115,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__3924794990607198876_70111488677900'
@@ -145,7 +145,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__521858547857855874_70302500634040'
@@ -174,7 +174,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__521858547857855874_70302472589680'
@@ -204,7 +204,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb___2053494836624222233_70282612074560'
@@ -261,7 +261,6 @@ Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-04 11:32:41 -0500
-<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Migrating to AddAttachmentAvatarToCandidates (20160204204733)
@@ -346,7 +345,7 @@ ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
-    8: <<<<<<< HEAD
+    8: <<<
   app/assets/stylesheets/home.scss:10
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2560950383385338721_70164978276940'
 
@@ -377,7 +376,7 @@ ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
-    8: 
+    8:
   app/assets/stylesheets/home.scss:10
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2560950383385338721_70165005051780'
 
@@ -409,7 +408,7 @@ ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
-    8: 
+    8:
   app/assets/stylesheets/home.scss:10
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4124435005561298156_70112842366980'
 
@@ -441,7 +440,7 @@ ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
-    8: 
+    8:
   app/assets/stylesheets/home.scss:10
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1576936097351637344_70220263003040'
 
@@ -472,7 +471,7 @@ ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
-    8: 
+    8:
   app/assets/stylesheets/home.scss:10
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1576936097351637344_70220263003040'
 
@@ -503,7 +502,7 @@ ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
-    8: 
+    8:
   app/assets/stylesheets/home.scss:10
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1576936097351637344_70220263003040'
 
@@ -659,7 +658,7 @@ Started GET "/candidates" for ::1 at 2016-02-04 19:54:39 -0500
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 
 SyntaxError (/Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:2: syntax error, unexpected <<
-<<<<<<< HEAD
+<<<
   ^
 /Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:4: syntax error, unexpected ===
 =======
@@ -668,7 +667,7 @@ SyntaxError (/Users/Administrator/Voter_app/app/controllers/candidates_controlle
 >>>>>>> 826b0253533bffe70db00975e81abc53090267ea
   ^
 /Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:18: syntax error, unexpected <<, expecting keyword_end
-<<<<<<< HEAD
+<<<
   ^
 /Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:28: syntax error, unexpected >>, expecting keyword_end
 >>>>>>> 826b0253533bffe70db00975e81abc53090267ea
@@ -1326,7 +1325,7 @@ Processing by VotersController#create as HTML
   [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "voters" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "j@j.com"], ["password", "1234"], ["created_at", "2016-02-05 01:16:29.344324"], ["updated_at", "2016-02-05 01:16:29.344324"]]
   [1m[35m (2.8ms)[0m  commit transaction
 Redirected to http://localhost:3000/voters/1
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 42ms (ActiveRecord: 3.6ms)
 
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
@@ -7870,7 +7869,7 @@ Processing by CandidatesController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 SyntaxError (/Users/kwilli/Desktop/NYCDA/group/app/models/candidate.rb:2: syntax error, unexpected <<
-<<<<<<< HEAD
+<<<
   ^):
   app/models/candidate.rb:2: syntax error, unexpected <<
   app/controllers/candidates_controller.rb:7:in `index'
@@ -7895,7 +7894,7 @@ Processing by CandidatesController#index as HTML
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 SyntaxError (/Users/kwilli/Desktop/NYCDA/group/app/models/candidate.rb:2: syntax error, unexpected <<
-<<<<<<< HEAD
+<<<
   ^):
   app/models/candidate.rb:2: syntax error, unexpected <<
   app/controllers/candidates_controller.rb:7:in `index'
@@ -7920,7 +7919,7 @@ Processing by CandidatesController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 SyntaxError (/Users/kwilli/Desktop/NYCDA/group/app/models/candidate.rb:2: syntax error, unexpected <<
-<<<<<<< HEAD
+<<<
   ^):
   app/models/candidate.rb:2: syntax error, unexpected <<
   app/controllers/candidates_controller.rb:7:in `index'

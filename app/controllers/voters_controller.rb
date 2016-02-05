@@ -7,8 +7,8 @@ class VotersController < ApplicationController
 
   	@voter = Voter.new(voter_params)
   	if @voter.save
-
-  	redirect_to '/intro'
+      session[:voter_id] = @voter.id
+    	redirect_to '/intro'
  	  else
  		render 'new' 
   	end

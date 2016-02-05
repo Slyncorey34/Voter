@@ -11,7 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20160205190947) do
+
 
   create_table "candidates", force: :cascade do |t|
     t.string   "fname"
@@ -28,6 +30,13 @@ ActiveRecord::Schema.define(version: 20160205190947) do
     t.datetime "avatar_updated_at"
     t.integer  "libVal"
     t.integer  "conVal"
+  end
+
+  create_table "quizzes", force: :cascade do |t|
+    t.string   "questions"
+    t.boolean  "answers"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "voters", force: :cascade do |t|
