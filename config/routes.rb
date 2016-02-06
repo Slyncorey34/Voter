@@ -11,9 +11,9 @@ Rails.application.routes.draw do
   get '/candidates/:id', to: 'candidates#show'
 
   get '/login', to: 'sessions#new'
-  post 'login', to: 'candidates#index'
+  post '/login', to: 'candidates#index'
 
-
+  # get '/delete', to: 'home#welcome'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
 
 
-    resources :voters, except: [:show]
+    resources :voters
     resources :sessions
     # resources :candidates
 

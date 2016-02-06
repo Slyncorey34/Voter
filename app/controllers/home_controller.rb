@@ -4,6 +4,7 @@ class HomeController < ApplicationController
 	end
 
 	def intro
+	
 	# the intro.html.erb includes the quick definitions and issues "spine" 
 	end
 

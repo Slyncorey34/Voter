@@ -36,9 +36,11 @@ class VotersController < ApplicationController
 
   def destroy
   	@voter = Voter.find(params[:id])
-  	@voter.delete
+  	@voter.destroy
+    session.clear
   	redirect_to root_path
   end
+
 
   private
   def voter_params
