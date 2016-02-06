@@ -4,7 +4,10 @@ class HomeController < ApplicationController
 	end
 
 	def intro
-	
+
+	@voter = current_voter
+
+
 	# the intro.html.erb includes the quick definitions and issues "spine" 
 	end
 

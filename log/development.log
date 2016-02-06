@@ -64,12 +64,12 @@ Migrations are pending. To resolve this issue, run:
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
 Migrating to CreateVoters (20160203212024)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35m (0.7ms)[0m  CREATE TABLE "voters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.7ms)[0m  CREATE TABLE "voters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)
   [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160203212024"]]
   [1m[35m (2.7ms)[0m  commit transaction
 Migrating to CreateCandidates (20160204002137)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35m (0.5ms)[0m  CREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar, "lname" varchar, "city" varchar, "state" varchar, "birthday" date, "party" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.5ms)[0m  CREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar, "lname" varchar, "city" varchar, "state" varchar, "birthday" date, "party" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160204002137"]]
   [1m[35m (2.1ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
@@ -85,7 +85,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <%=link_to 'Log In', voter_path%></p>
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__328105191698407666_70341557940420'
@@ -115,7 +115,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__3924794990607198876_70111488677900'
@@ -145,7 +145,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__521858547857855874_70302500634040'
@@ -174,7 +174,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb__521858547857855874_70302472589680'
@@ -204,7 +204,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"vo
     1: <h1>This is the welcome/landing page</h1>
     2: <!--  -->
     3: <!-- <%=link_to 'Log In', voter_path%></p> -->
-    4: 
+    4:
     5: <!-- link to sign up form -->
     6: <%= link_to 'Sign up', new_voter_path%>
   app/views/home/welcome.html.erb:3:in `_app_views_home_welcome_html_erb___2053494836624222233_70282612074560'
@@ -261,6 +261,265 @@ Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-04 11:32:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentAvatarToCandidates (20160204204733)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "candidates" ADD "avatar_file_name" varchar[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "candidates" ADD "avatar_content_type" varchar
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "candidates" ADD "avatar_file_size" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "candidates" ADD "avatar_updated_at" datetime
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160204204733"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-oyk20r.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-1clskv8.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-1clskv8.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-1clskv8.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/2c0837fbea9e2e3bd8cdafa919fe90cc20160204-4244-6g7w3l'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-1clskv8.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-1clskv8.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-1clskv8.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/2c0837fbea9e2e3bd8cdafa919fe90cc20160204-4244-1u4egjl'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160204-4244-196uwgu.jpg'
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Donald"], ["lname", "Trump"], ["city", "Manhattan"], ["state", "NY"], ["birthday", 1946], ["party", "R"], ["avatar_file_name", "Donald_August_19_(cropped).jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 57173], ["avatar_updated_at", "2016-02-04 23:17:02.959077"], ["created_at", "2016-02-04 23:17:03.903677"], ["updated_at", "2016-02-04 23:17:03.903677"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-lb71ws.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-l5h4h2.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-l5h4h2.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-l5h4h2.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3a072e8460d51acfe3c4bb0589be872620160204-4244-qnnw1i'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-l5h4h2.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-l5h4h2.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-l5h4h2.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3a072e8460d51acfe3c4bb0589be872620160204-4244-yxuiyy'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160204-4244-1kuq2o2.jpg'
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Hillary"], ["lname", "Clinton"], ["city", "Chappaqua"], ["state", "NY"], ["birthday", 1947], ["party", "D"], ["avatar_file_name", "AP_hillary_clinton_jtm_150418_16x9_992.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 51947], ["avatar_updated_at", "2016-02-04 23:17:04.447564"], ["created_at", "2016-02-04 23:17:04.777964"], ["updated_at", "2016-02-04 23:17:04.777964"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-bjbb3b.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-16grdc9.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-16grdc9.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-16grdc9.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/8ea07e0eb8241a3aad86cbda4e181b4220160204-4244-it8x0k'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-16grdc9.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-16grdc9.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-16grdc9.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/8ea07e0eb8241a3aad86cbda4e181b4220160204-4244-9q7zts'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160204-4244-hou4hp.jpg'
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Bernie"], ["lname", "Sanders"], ["city", "Burlington"], ["state", "VT"], ["birthday", 1941], ["party", "D"], ["avatar_file_name", "Bernie_Sanders.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 282297], ["avatar_updated_at", "2016-02-04 23:17:04.987534"], ["created_at", "2016-02-04 23:17:05.372841"], ["updated_at", "2016-02-04 23:17:05.372841"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-hwcu92.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-149p12l.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-149p12l.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-149p12l.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/ed7302dea7cc21ee1dc9445a7d1f5ca120160204-4244-gxnzk3'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-149p12l.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-149p12l.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-149p12l.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/ed7302dea7cc21ee1dc9445a7d1f5ca120160204-4244-17dkhkx'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160204-4244-1s839ul.jpg'
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Marco"], ["lname", "Rubio"], ["city", "West Miami"], ["state", "FL"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "150325233445-marco-rubio-head-shot-exlarge-169.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 43969], ["avatar_updated_at", "2016-02-04 23:17:06.501749"], ["created_at", "2016-02-04 23:17:06.769511"], ["updated_at", "2016-02-04 23:17:06.769511"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-1ti0aen.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-1c48itw.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-1c48itw.png[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-1c48itw.png[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/d35b3333a089ae7731649d39a352ddc720160204-4244-kh7keu'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-1c48itw.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-1c48itw.png[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-1c48itw.png[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/d35b3333a089ae7731649d39a352ddc720160204-4244-8nhz0y'
+  [1m[35m (0.3ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160204-4244-cmfse1.png'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Ted"], ["lname", "Cruz"], ["city", "Houston"], ["state", "TX"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "Ted_Cruz_14.png"], ["avatar_content_type", "image/png"], ["avatar_file_size", 351323], ["avatar_updated_at", "2016-02-04 23:17:07.202644"], ["created_at", "2016-02-04 23:17:07.628820"], ["updated_at", "2016-02-04 23:17:07.628820"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-02-04 23:41:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 542ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{", was ""):
+    2: <html>
+    3: <head>
+    4:   <title>VoterApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: <<<
+  app/assets/stylesheets/home.scss:10
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2560950383385338721_70164978276940'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (141.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (191.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (349.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 23:42:20 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{", was ""):
+    2: <html>
+    3: <head>
+    4:   <title>VoterApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:
+  app/assets/stylesheets/home.scss:10
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2560950383385338721_70165005051780'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (131.3ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (100.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (227.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 23:44:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 521ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{", was ""):
+    2: <html>
+    3: <head>
+    4:   <title>VoterApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:
+  app/assets/stylesheets/home.scss:10
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4124435005561298156_70112842366980'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.0ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (134.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (115.0ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (242.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-05 14:57:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 627ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{", was ""):
+    2: <html>
+    3: <head>
+    4:   <title>VoterApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:
+  app/assets/stylesheets/home.scss:10
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1576936097351637344_70220263003040'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (151.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (234.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (399.5ms)
+
+
+Started GET "/" for ::1 at 2016-02-05 14:58:36 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{", was ""):
+    2: <html>
+    3: <head>
+    4:   <title>VoterApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:
+  app/assets/stylesheets/home.scss:10
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1576936097351637344_70220263003040'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (142.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (231.6ms)
+
+
+Started GET "/" for ::1 at 2016-02-05 15:00:10 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "...81abc53090267ea": expected "{", was ""):
+    2: <html>
+    3: <head>
+    4:   <title>VoterApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:
+  app/assets/stylesheets/home.scss:10
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1576936097351637344_70220263003040'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (136.9ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (104.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (237.6ms)
+=======
 
 
 Started GET "/candidates" for ::1 at 2016-02-04 19:47:42 -0500
@@ -399,7 +658,7 @@ Started GET "/candidates" for ::1 at 2016-02-04 19:54:39 -0500
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 
 SyntaxError (/Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:2: syntax error, unexpected <<
-<<<<<<< HEAD
+<<<
   ^
 /Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:4: syntax error, unexpected ===
 =======
@@ -408,7 +667,7 @@ SyntaxError (/Users/Administrator/Voter_app/app/controllers/candidates_controlle
 >>>>>>> 826b0253533bffe70db00975e81abc53090267ea
   ^
 /Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:18: syntax error, unexpected <<, expecting keyword_end
-<<<<<<< HEAD
+<<<
   ^
 /Users/Administrator/Voter_app/app/controllers/candidates_controller.rb:28: syntax error, unexpected >>, expecting keyword_end
 >>>>>>> 826b0253533bffe70db00975e81abc53090267ea
@@ -1066,7 +1325,7 @@ Processing by VotersController#create as HTML
   [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "voters" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "j@j.com"], ["password", "1234"], ["created_at", "2016-02-05 01:16:29.344324"], ["updated_at", "2016-02-05 01:16:29.344324"]]
   [1m[35m (2.8ms)[0m  commit transaction
 Redirected to http://localhost:3000/voters/1
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 42ms (ActiveRecord: 3.6ms)
 
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
@@ -7240,6 +7499,7 @@ Processing by Rails::InfoController#routes as HTML
 Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2016-02-05 11:42:49 -0500
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by HomeController#welcome as HTML
@@ -14676,6 +14936,53 @@ Started GET "/application.js" for ::1 at 2016-02-05 17:02:57 -0500
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+Started GET "/" for ::1 at 2016-02-05 11:48:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 472ms (Views: 464.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 11:48:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddLibAndContoVoters (20160205190934)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "voters" ADD "libVal" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "voters" ADD "conVal" integer
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160205190934"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddLibAndContoCandidates (20160205190947)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "candidates" ADD "libVal" integer
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "candidates" ADD "conVal" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160205190947"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> da1db8c1c563669deac0e22ace61b3e82e6aa045
+
+
+Started GET "/" for ::1 at 2016-02-05 15:50:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 5763f783d4f944f077a3fa138256cafcf91d5d64
   web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -14698,6 +15005,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /Users/Administrator/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/Administrator/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /Users/Administrator/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
@@ -15432,3 +15740,523 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   Rendered /Users/Administrator/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/Administrator/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
   Rendered /Users/Administrator/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (251.4ms)
+=======
+  /Users/kwilli/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/kwilli/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/kwilli/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.9ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (219.0ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (381.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddLibAndContoVoters (20160205190934)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "voters" ADD "libVal" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "voters" ADD "conVal" integer
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160205190934"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Migrating to AddLibAndContoCandidates (20160205190947)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "candidates" ADD "libVal" integer
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "candidates" ADD "conVal" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160205190947"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2016-02-05 15:51:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1507ms (Views: 1476.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/application.self-64ca5834c44f7a150db550e2676ac86e838bd86018582e62affe9172a0426f5b.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:51:11 -0500
+
+
+Started GET "/" for ::1 at 2016-02-05 15:52:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 613ms (Views: 596.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/application.self-64ca5834c44f7a150db550e2676ac86e838bd86018582e62affe9172a0426f5b.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:28 -0500
+
+
+Started GET "/" for ::1 at 2016-02-05 15:52:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 519ms (Views: 503.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/assets/application.self-64ca5834c44f7a150db550e2676ac86e838bd86018582e62affe9172a0426f5b.js?body=1" for ::1 at 2016-02-05 15:52:51 -0500
+
+
+Started GET "/" for ::1 at 2016-02-05 15:54:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 526ms (Views: 510.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/application.self-64ca5834c44f7a150db550e2676ac86e838bd86018582e62affe9172a0426f5b.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:33 -0500
+
+
+Started GET "/" for ::1 at 2016-02-05 15:54:39 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 111ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-05 15:54:40 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-05 15:54:41 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:41 -0500
+
+
+Started GET "/assets/application.self-64ca5834c44f7a150db550e2676ac86e838bd86018582e62affe9172a0426f5b.js?body=1" for ::1 at 2016-02-05 15:54:41 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:41 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:41 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:41 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:54:41 -0500
+
+
+Started GET "/" for ::1 at 2016-02-05 15:55:35 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/candidates" for ::1 at 2016-02-05 15:55:40 -0500
+Processing by CandidatesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/kwilli/Desktop/NYCDA/group/app/models/candidate.rb:2: syntax error, unexpected <<
+<<<
+  ^):
+  app/models/candidate.rb:2: syntax error, unexpected <<
+  app/controllers/candidates_controller.rb:7:in `index'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.9ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (118.3ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (253.6ms)
+
+
+Started GET "/candidates" for ::1 at 2016-02-05 15:55:41 -0500
+Processing by CandidatesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/kwilli/Desktop/NYCDA/group/app/models/candidate.rb:2: syntax error, unexpected <<
+<<<
+  ^):
+  app/models/candidate.rb:2: syntax error, unexpected <<
+  app/controllers/candidates_controller.rb:7:in `index'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (122.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.8ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (229.5ms)
+
+
+Started GET "/candidates" for ::1 at 2016-02-05 15:56:47 -0500
+Processing by CandidatesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/kwilli/Desktop/NYCDA/group/app/models/candidate.rb:2: syntax error, unexpected <<
+<<<
+  ^):
+  app/models/candidate.rb:2: syntax error, unexpected <<
+  app/controllers/candidates_controller.rb:7:in `index'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (129.3ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (299.0ms)
+
+
+Started GET "/candidates" for ::1 at 2016-02-05 15:57:25 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.5ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 72ms (Views: 65.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/assets/application.self-64ca5834c44f7a150db550e2676ac86e838bd86018582e62affe9172a0426f5b.js?body=1" for ::1 at 2016-02-05 15:57:26 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-05 15:57:50 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/application.self-b5b5be9f3343bfd299f50690588e59ad28b60fad1377c971deb65ec4990ce686.css?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/application.self-64ca5834c44f7a150db550e2676ac86e838bd86018582e62affe9172a0426f5b.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-05 15:57:51 -0500
+
+
+Started GET "/" for ::1 at 2016-02-05 15:57:52 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-05 16:05:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 590ms (Views: 572.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-05 16:05:16 -0500
+Processing by HomeController#intro as HTML
+  Rendered home/intro.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    12: 				<button class="start-button" tpye="button">START QUIZ</button>
+    13: 			</div>
+    14: <!-- quiz form will go here -->
+    15: <%= form_for @quiz do |q| %>
+    16: <%=q.label :question1%>
+    17: <%= q.check_box :answer1  %>
+    18: <%=q.label :question%>
+  app/views/home/intro.html.erb:15:in `_app_views_home_intro_html_erb___2363853786676600882_70353023432100'
+
+
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (130.1ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (124.2ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kwilli/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (289.3ms)
+>>>>>>> 5763f783d4f944f077a3fa138256cafcf91d5d64

@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  get 'quiz/index'
+
+  get 'quiz/new'
+
+  get 'quiz/create'
+
+  get 'quiz/delete'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,6 +18,7 @@ Rails.application.routes.draw do
   get '/intro', to: 'home#intro'
 
   get '/candidates', to: 'candidates#index'
+
   get '/candidates/:id', to: 'candidates#show'
 
   get '/login', to: 'sessions#new'
@@ -19,13 +30,13 @@ Rails.application.routes.draw do
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-  
-  # Example resource route (maps HTTP verbs to controller actions automatically):
 
+  # Example resource route (maps HTTP verbs to controller actions automatically):
 
     resources :voters
     resources :sessions
-    # resources :candidates
+    resources :candidates
+
 
   # Example resource route with options:
   #   resources :products do
