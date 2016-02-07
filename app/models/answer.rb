@@ -1,4 +1,4 @@
 class Answer < ActiveRecord::Base
   belongs_to :question
-  belongs_to :voter
+  has_many :attempts, through: :quizzes
 end
