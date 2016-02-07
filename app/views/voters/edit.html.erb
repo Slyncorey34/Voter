@@ -1,10 +1,15 @@
-<p>Update your email address in the form below</p>
-	<%=form_for @voter, method: :patch do |f|%>	
+<div class="sign-up-form">
+	<p>Update your email address in the form below</p>
+	<%=form_for @voter do |f|%>	
 		<%=f.label :email %>
 		<%=f.text_field :email%>
 		<%=f.label :password%>
 		<%=f.password_field :password%>
-		<%=f.submit "Update"%> 
+		<%=f.submit "Save changes"%> 
 	<%end%>
-<!-- <p>Or, delete your account</p> -->
-<%=link_to 'Delete', voter_path, method: :delete %>
+	<br>
+	<p>Or, <%= link_to 'Delete', voter_path(@voter.id), method: :delete %> this account </p>
+</div>
+
+
+		

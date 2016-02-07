@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'candidates#index'
 
+  # get '/delete', to: 'home#welcome'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
