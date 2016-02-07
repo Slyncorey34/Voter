@@ -10,6 +10,8 @@ class QuizController < ApplicationController
 
   def create
     @quiz = Quiz.create(params)
+    @questions = Questions.all
+    q.questions  << Questions.order_by_rand.all
     redirect_to :show
   end
 

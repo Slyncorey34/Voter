@@ -16280,3 +16280,5 @@ Migrating to CreateAnswers (20160207005002)
 =======
 >>>>>>> 5763f783d4f944f077a3fa138256cafcf91d5d64
 >>>>>>> 421f3a58a25cde1b6e8aa9cf864fddf8e0be99cf
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
