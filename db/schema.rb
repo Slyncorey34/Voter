@@ -11,9 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 20160207005002) do
 
-ActiveRecord::Schema.define(version: 20160205190947) do
-
+  create_table "answers", force: :cascade do |t|
+    t.integer  "question_id"
+    t.integer  "lib_points"
+    t.integer  "con_points"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "candidates", force: :cascade do |t|
     t.string   "fname"
@@ -30,6 +36,12 @@ ActiveRecord::Schema.define(version: 20160205190947) do
     t.datetime "avatar_updated_at"
     t.integer  "libVal"
     t.integer  "conVal"
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.string   "prompt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "quizzes", force: :cascade do |t|
