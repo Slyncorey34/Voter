@@ -1,4 +1,5 @@
 class Question < ActiveRecord::Base
-  has_many :answers
+  belongs_to :answers
   belongs_to :quiz
+  validates_presence_of :prompt
 end
