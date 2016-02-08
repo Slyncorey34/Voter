@@ -22,8 +22,7 @@ class QuizController < ApplicationController
   end
 
   def show
-    @quiz = Quiz.where(id: params[:id]).first
-    @question = Questions.where(id: params[:id]).first
+  
   end
 
   def delete

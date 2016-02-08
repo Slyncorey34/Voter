@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207022841) do
+ActiveRecord::Schema.define(version: 20160208204636) do
 
   create_table "answers", force: :cascade do |t|
     t.integer  "question_id"
@@ -58,7 +58,20 @@ ActiveRecord::Schema.define(version: 20160207022841) do
     t.boolean  "answers"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean  "answer1"
+    t.boolean  "answer2"
+    t.boolean  "answer3"
+    t.boolean  "answer4"
+    t.boolean  "answer5"
+    t.boolean  "answer6"
+    t.boolean  "answer7"
+    t.boolean  "answer8"
+    t.boolean  "answer9"
+    t.boolean  "answer10"
+    t.integer  "voter_id"
   end
+
+  add_index "quizzes", ["voter_id"], name: "index_quizzes_on_voter_id"
 
   create_table "voters", force: :cascade do |t|
     t.string   "email"
