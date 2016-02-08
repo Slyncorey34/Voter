@@ -1,41 +1,38 @@
 class QuizController < ApplicationController
-  before_action :find_question
+  # before_action :find_question
 
   def index
   end
 
   def new
    # @quiz = Quiz.new(voter_id: current_voter.id)
-   
+    @quiz = Quiz.new(quiz_params)
     @voter = current_voter
   end
 
   def create
-    @user = current_voter
-    @quiz = current_voter.quizzes.new(quiz_params)
-    if @quiz.results.save
-      redirect_to attempts_show_page, alert: "completed the quiz! here's your candidate match"
+    
+    @quiz = current_voter.quizzes.build(quiz_params)
+    if @quiz.save
+      redirect_to quiz_path(@quiz) alert: "completed the quiz! here's your candidate match"
     else
-      redirect_to root_path, alert: "woops, this is embarrassing. we were unable to save your answers for that attempt. care to start again?"
+     render :new 
+     # add flash that they need to try again
     end
-    @questions = @quiz.quesitons.all
   end
 
   def show
-  
+   @quiz = Quiz.find(:voter_id[current_voter.id])
   end
 
-  def delete
-    @quiz.destroy
-  end
+ 
 
   private
 
   def quiz_params
-    params.require(:quiz).permit(:voter_id, :attempts_id, {attempts_attributes: [:id, :quiz_id, :answer_id]})
+    params.require(:quiz).permit(:voter_id, :answer1, :answer2, :answer3, :answer4, :answer5, :answer6, :answer7, :answer8, :answer9, :answer10)
   end
-  def find_question
-    @question = @stage.quesitons.find_by_id(params[:id])
+  
 end
 
 
