@@ -1,4 +1,4 @@
-class QuizController < ApplicationController
+class QuizzesController < ApplicationController
   # before_action :find_question
 
   def index
@@ -6,15 +6,16 @@ class QuizController < ApplicationController
 
   def new
    # @quiz = Quiz.new(voter_id: current_voter.id)
-    @quiz = Quiz.new(quiz_params)
+    @quiz = Quiz.new
     @voter = current_voter
   end
 
   def create
     
-    @quiz = current_voter.quizzes.build(quiz_params)
+    @quiz = Quiz.new(quiz_params)
+    @quiz.voter_id = current_voter.id
     if @quiz.save
-      redirect_to quiz_path(@quiz) alert: "completed the quiz! here's your candidate match"
+      redirect_to quiz_path(@quiz) 
     else
      render :new 
      # add flash that they need to try again
@@ -22,7 +23,8 @@ class QuizController < ApplicationController
   end
 
   def show
-   @quiz = Quiz.find(:voter_id[current_voter.id])
+   @quiz = Quiz.find(current_voter.id)
+
   end
 
  
