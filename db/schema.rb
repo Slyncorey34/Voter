@@ -11,24 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207022841) do
-
-  create_table "answers", force: :cascade do |t|
-    t.integer  "question_id"
-    t.integer  "lib_points"
-    t.integer  "con_points"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "attempts", force: :cascade do |t|
-    t.integer  "quiz_id"
-    t.integer  "result"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "attempts", ["quiz_id"], name: "index_attempts_on_quiz_id"
+ActiveRecord::Schema.define(version: 20160208215716) do
 
   create_table "candidates", force: :cascade do |t|
     t.string   "fname"
@@ -47,17 +30,18 @@ ActiveRecord::Schema.define(version: 20160207022841) do
     t.integer  "conVal"
   end
 
-  create_table "questions", force: :cascade do |t|
-    t.string   "prompt"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "quizzes", force: :cascade do |t|
-    t.string   "questions"
-    t.boolean  "answers"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string  "answer1"
+    t.string  "answer2"
+    t.string  "answer3"
+    t.string  "answer4"
+    t.string  "answer5"
+    t.string  "answer6"
+    t.string  "answer7"
+    t.string  "answer8"
+    t.string  "answer9"
+    t.string  "answer10"
+    t.integer "voter_id"
   end
 
   create_table "voters", force: :cascade do |t|
