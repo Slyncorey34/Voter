@@ -1,3 +1,6 @@
 class Quiz < ActiveRecord::Base
-	belongs_to :voter
+	has_many :results
+	has_many :quiz_questions
+	has_many :voters, :through => :results, :foreign_key => "voter_id"
+	has_many :attempts
 end
