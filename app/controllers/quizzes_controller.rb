@@ -15,6 +15,16 @@ class QuizzesController < ApplicationController
     @quiz = Quiz.new(quiz_params)
     @quiz.voter_id = current_voter.id
     if @quiz.save
+      if current_voter.libVal > 80
+        redirect_to candidate_path(lname:"Sanders")
+      elsif current_voter.conVal > 85
+        redirect_to candidate_path(lname:"Trump")
+      elsif current_voter.libVal > 30 && current_voter.conVal > 1
+        redirect_to candidate_path(lname:"Clinton")
+      elsif current_voter.libVal > 15 && current_voter.conVal > 20
+        redirect_to candidate_path(lname:"Rubio")
+      elsif current_voter.conVal > 70 && current_voter.conVal < 99
+        redirect_to candidate_path(lname:"Cruz")
       redirect_to quiz_path(@quiz) 
     else
      render :new 
