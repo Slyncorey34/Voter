@@ -6,6 +6,6 @@ class CreateAttempts < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_foriegn_key :attempts, :quizzes
+    add_foreign_key :attempts, :quizzes
   end
 end
