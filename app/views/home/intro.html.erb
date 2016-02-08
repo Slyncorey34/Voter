@@ -14,12 +14,16 @@
 <!-- quiz form will go here -->
 
 <%= form_for @quiz, url: {action: "create"} do |q| %>
+<%= @question.prompt %>
 <%= q.check_box :answer1  %>
 <%= q.check_box :answer2  %>
 <%= q.check_box :answer3  %>
 <%= q.check_box :answer4  %>
 <%= q.button :submit %>
 <% end %>
+
+
+
 
 <!-- <%= simple_form_for @quiz do |f| %>
    <%= f.input :answer1, as: :boolean, checked_value: true, unchecked_value: false %>

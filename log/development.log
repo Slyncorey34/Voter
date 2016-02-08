@@ -16508,3 +16508,86 @@ Migrating to CreateAttempts (20160207022841)
             FROM sqlite_temp_master
             WHERE name='index_attempts_on_quiz_id' AND type='index'
 [0m
+  [1m[36mQuestion Load (2.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "more gun control?"], ["created_at", "2016-02-08 16:39:03.516392"], ["updated_at", "2016-02-08 16:39:03.516392"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "keep obamacare?"], ["created_at", "2016-02-08 16:39:03.525766"], ["updated_at", "2016-02-08 16:39:03.525766"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "pro-abortion?"], ["created_at", "2016-02-08 16:39:03.530463"], ["updated_at", "2016-02-08 16:39:03.530463"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "higher taxes for the 1%"], ["created_at", "2016-02-08 16:39:03.535155"], ["updated_at", "2016-02-08 16:39:03.535155"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "okay to send emails on home server?"], ["created_at", "2016-02-08 16:39:03.539402"], ["updated_at", "2016-02-08 16:39:03.539402"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "affirmative action is bullshit"], ["created_at", "2016-02-08 16:39:03.543994"], ["updated_at", "2016-02-08 16:39:03.543994"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "aw, stop, the bush term wasnt THAT bad"], ["created_at", "2016-02-08 16:39:03.549202"], ["updated_at", "2016-02-08 16:39:03.549202"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "stem cell research is a-okay with me"], ["created_at", "2016-02-08 16:39:03.553575"], ["updated_at", "2016-02-08 16:39:03.553575"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-2gkiyj.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-h2z2pd.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-h2z2pd.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-h2z2pd.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/ea46c8b4209046db64d7049338de340c20160208-1959-18d933q'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-h2z2pd.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-h2z2pd.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-h2z2pd.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/ea46c8b4209046db64d7049338de340c20160208-1959-15otox0'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/28270d032b36d80939a39657d6510acd20160208-1959-trp1te.jpg'
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Donald"], ["lname", "Trump"], ["city", "Manhattan"], ["state", "NY"], ["birthday", 1946], ["party", "R"], ["avatar_file_name", "Donald_August_19_(cropped).jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 57173], ["avatar_updated_at", "2016-02-08 16:39:03.757391"], ["conVal", 99], ["libVal", 100], ["created_at", "2016-02-08 16:39:04.490720"], ["updated_at", "2016-02-08 16:39:04.490720"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-oi9467.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-1pclnbf.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-1pclnbf.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-1pclnbf.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/00f501b93f141191915c6204aa25954620160208-1959-n6gezp'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-1pclnbf.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-1pclnbf.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-1pclnbf.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/00f501b93f141191915c6204aa25954620160208-1959-rii9xe'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/f813a2f2859452c11e758ff3322e292b20160208-1959-19bqrza.jpg'
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Hillary"], ["lname", "Clinton"], ["city", "Chappaqua"], ["state", "NY"], ["birthday", 1947], ["party", "D"], ["avatar_file_name", "AP_hillary_clinton_jtm_150418_16x9_992.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 51947], ["avatar_updated_at", "2016-02-08 16:39:05.120076"], ["conVal", 20], ["libVal", 80], ["created_at", "2016-02-08 16:39:05.463584"], ["updated_at", "2016-02-08 16:39:05.463584"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-yj6b6o.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-16m75ht.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-16m75ht.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-16m75ht.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/1496f00788f08089a6b6975f69d7bea520160208-1959-6a3r2f'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-16m75ht.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-16m75ht.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-16m75ht.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/1496f00788f08089a6b6975f69d7bea520160208-1959-1en5fmr'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/5f17100321b761e56b381d17603a7f7b20160208-1959-1h6yjzi.jpg'
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Bernie"], ["lname", "Sanders"], ["city", "Burlington"], ["state", "VT"], ["birthday", 1941], ["party", "D"], ["avatar_file_name", "Bernie_Sanders.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 282297], ["avatar_updated_at", "2016-02-08 16:39:05.678376"], ["conVal", 1], ["libVal", 99], ["created_at", "2016-02-08 16:39:06.051250"], ["updated_at", "2016-02-08 16:39:06.051250"]]
+  [1m[35m (4.1ms)[0m  commit transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-2emh32.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-1l8cl9k.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-1l8cl9k.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-1l8cl9k.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/e2949a0b7848ad8cfc5765e37d24953420160208-1959-ujxiz1'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-1l8cl9k.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-1l8cl9k.jpg[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-1l8cl9k.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/e2949a0b7848ad8cfc5765e37d24953420160208-1959-1mgu6cn'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/26971f96ee32d5840f48cedc60f49c2120160208-1959-1xcjbdl.jpg'
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "libVal", "conVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fname", "Marco"], ["lname", "Rubio"], ["city", "West Miami"], ["state", "FL"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "150325233445-marco-rubio-head-shot-exlarge-169.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 43969], ["avatar_updated_at", "2016-02-08 16:39:06.505005"], ["libVal", 30], ["conVal", 70], ["created_at", "2016-02-08 16:39:06.808923"], ["updated_at", "2016-02-08 16:39:06.808923"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-1bbnc5l.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-1bcrwo9.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-1bcrwo9.png[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-1bcrwo9.png[0]' -auto-orient -resize "300x300>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/362dfeb2d0a5a410081b20766203fb1320160208-1959-cop2sp'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-1bcrwo9.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-1bcrwo9.png[0]'
+Command :: convert '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-1bcrwo9.png[0]' -auto-orient -resize "100x100>" '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/362dfeb2d0a5a410081b20766203fb1320160208-1959-1ql1d8z'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/sp/3vlky7pj4k18ych3pm9np9v00000gn/T/3814d17276d8a462d3d6a4d3fb53a7b420160208-1959-hl8m7s.png'
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "candidates" ("fname", "lname", "city", "state", "birthday", "party", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "libVal", "conVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Ted"], ["lname", "Cruz"], ["city", "Houston"], ["state", "TX"], ["birthday", 1971], ["party", "R"], ["avatar_file_name", "Ted_Cruz_14.png"], ["avatar_content_type", "image/png"], ["avatar_file_size", 351323], ["avatar_updated_at", "2016-02-08 16:39:07.240103"], ["libVal", 15], ["conVal", 85], ["created_at", "2016-02-08 16:39:07.642349"], ["updated_at", "2016-02-08 16:39:07.642349"]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36mQuestion Load (2.0ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
