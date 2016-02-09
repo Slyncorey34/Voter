@@ -15,6 +15,8 @@ class QuizzesController < ApplicationController
     @quiz = Quiz.new(quiz_params)
     @quiz.voter_id = current_voter.id
     if @quiz.save
+
+
       # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
       if current_voter.libVal > 80
         redirect_to candidate_path(lname:"Sanders")
@@ -26,7 +28,8 @@ class QuizzesController < ApplicationController
         redirect_to candidate_path(lname:"Rubio")
       elsif current_voter.conVal > 70 && current_voter.conVal < 99
         redirect_to candidate_path(lname:"Cruz")
-      redirect_to quiz_path(@quiz) 
+
+
     else
      render :new 
      flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
