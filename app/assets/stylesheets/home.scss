@@ -2,3 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+.lesson{
+	color:orange;
+	background-color:gray;
+	text-align:center;
+	border-radius:8px;
+}
+.intro{
+	margin-left: auto;
+	margin-right: auto;
+	height:500px;
+	width:100%;
+	border-radius:8px;
+}
+.who{
+	font-size:48px;
+	margin-left:35%;
+	margin-right:35%;
+	text-align:center;
+	border-radius:8px;
+}
+.intro_foot{
+	margin-left:35%;
+	margin-right:35%;
+	font-size:45px;
+	text-align:center;
+	background-color:blue;
+	color:orange;
+	border-radius:8px;
+}
+.begin{
+	background-color:red;
+	text-align:center;
+	margin-left:40%;
+	margin-right:40%;
+	font-size:40px;
+}
