@@ -9,8 +9,7 @@ class CandidatesController < ApplicationController
   end
 
   def show
-  	@candidate = Candidate.find(params[:id])
->>>>>>> master
+  	@c = Candidate.find(params[:id])
   	# how do we display a candidate without doing it by id?
   end
 
