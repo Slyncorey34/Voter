@@ -15,6 +15,9 @@ class QuizzesController < ApplicationController
     @quiz = Quiz.new(quiz_params)
     @quiz.voter_id = current_voter.id
     @voter = Voter.where(id:current_voter.id).last
+    @voter.libVal = 0
+    @voter.conVal = 0
+    @voter.save
     if @quiz.save
       # @answers = [:answer1, :answer2, :answer3, :answer4, :answer5, :answer6, :answer7, :answer8, :answer9, :answer10]
       params[:quiz].fetch_values("answer1", "answer2", "answer3", "answer4", "answer5", "answer6", "answer7", "answer8", "answer9", "answer10").each do |q|
@@ -41,7 +44,10 @@ class QuizzesController < ApplicationController
     elsif @voter.libVal > 15 && @voter.conVal > 20
       redirect_to candidate_path(id:4)
     elsif @voter.conVal > 70 && @voter.conVal < 99
-      redirect_to candidate_path(id:5)  
+      redirect_to candidate_path(id:5)
+    else 
+      redirect_to new_quiz_path
+      flash[:alert] = "That didn't work. Try again?"
     end
    end
 
