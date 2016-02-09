@@ -44,7 +44,10 @@ class QuizzesController < ApplicationController
     elsif @voter.libVal > 15 && @voter.conVal > 20
       redirect_to candidate_path(id:4)
     elsif @voter.conVal > 70 && @voter.conVal < 99
-      redirect_to candidate_path(id:5)  
+      redirect_to candidate_path(id:5)
+    else 
+      redirect_to new_quiz_path
+      flash[:alert] = "That didn't work. Try again?"
     end
    end
 
