@@ -4,8 +4,10 @@ class HomeController < ApplicationController
 	end
 
 	def intro
+
 	@voter = current_voter
 	@quiz = Quiz.new
+
 
 	# the intro.html.erb includes the quick definitions and issues "spine" 
 	end

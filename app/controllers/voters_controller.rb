@@ -6,6 +6,8 @@ class VotersController < ApplicationController
   def create
 
   	@voter = Voter.new(voter_params)
+      @voter.conVal = 0
+      @voter.libVal = 0
   	if @voter.save
       session[:voter_id] = @voter.id
     	redirect_to '/intro'
@@ -36,12 +38,14 @@ class VotersController < ApplicationController
 
   def destroy
   	@voter = Voter.find(params[:id])
-  	@voter.delete
+  	@voter.destroy
+    session.clear
   	redirect_to root_path
   end
 
+
   private
   def voter_params
-  	params.require(:voter).permit(:email, :password)
+  	params.require(:voter).permit(:email, :password, :libVal, :conVal)
   end
 end

@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'quiz/index'
-
-  get 'quiz/new'
-
-  get 'quiz/create'
-
-  get 'quiz/delete'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -22,8 +15,10 @@ Rails.application.routes.draw do
   get '/candidates/:id', to: 'candidates#show'
 
   get '/login', to: 'sessions#new'
+  get '/logout', to: 'sessions#destroy'
   post '/login', to: 'candidates#index'
 
+  # get '/delete', to: 'home#welcome'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -35,7 +30,7 @@ Rails.application.routes.draw do
     resources :voters
     resources :sessions
     resources :candidates
-
+    resources :quizzes
 
   # Example resource route with options:
   #   resources :products do
