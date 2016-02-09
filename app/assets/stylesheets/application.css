@@ -27,7 +27,7 @@ h1 {
 	margin-top: -1%;
 }
 
-.hometext {
+.homepage {
 	height: 200px;
 	width: 260px;
 	margin: 30px auto;
@@ -44,7 +44,7 @@ h1 {
 	text-align: center;
 	font-weight: bold;
 	color: grey;
-	width
+
 }
 .results {
 	width: 30%;
@@ -69,10 +69,8 @@ h1 {
 	color: #fff;
 	padding: 5px 25px;
 	border-radius: 10px;
-	margin-left: 35%;
+	margin-left: 30%;
 	text-decoration: none;
-
-
 }
 .quiz-container {
 	width: 60%;
@@ -103,15 +101,20 @@ h3 {
 	margin-left: 35%;
 }
 .login-form {
-	height: 200px;
-	width: 200px;
-	margin: 5px auto;
+	height: 100px;
+	width: 260px;
+	margin: 30px auto;
+	padding: 25px;
+	border-radius: 20px;
+	margin-top: 10%;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
     0px 10px 20px rgba(0,0,0,0.05),
     0px 20px 20px rgba(0,0,0,0.05),
     0px 30px 20px rgba(0,0,0,0.05);
 }
-
+.login-form input {
+	margin: 10px;
+}
 .prezboard {
 	width: 50%;
 	margin-left: 20%
