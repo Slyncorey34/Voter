@@ -19,7 +19,6 @@ class QuizzesController < ApplicationController
     @voter.conVal = 0
     @voter.save
     if @quiz.save
-
       # @answers = [:answer1, :answer2, :answer3, :answer4, :answer5, :answer6, :answer7, :answer8, :answer9, :answer10]
       params[:quiz].fetch_values("answer1", "answer2", "answer3", "answer4", "answer5", "answer6", "answer7", "answer8", "answer9", "answer10").each do |q|
         if q == "yes"
@@ -32,6 +31,7 @@ class QuizzesController < ApplicationController
           render :new
           flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
         end
+<<<<<<< HEAD
       end
       # current_voter.libVal=indexcount(@answers, L)*10;
       # current_voter.conVal=indexcount(@answers, V)*10
@@ -71,6 +71,8 @@ class QuizzesController < ApplicationController
      render :new
      flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
 
+=======
+>>>>>>> 3f3ac68131791ee0f0f59d6b39e400f3166d7a94
     end
     end
 
@@ -88,7 +90,6 @@ class QuizzesController < ApplicationController
     else
       redirect_to new_quiz_path
       flash[:alert] = "That didn't work. Try again?"
-
     end
    end
 
