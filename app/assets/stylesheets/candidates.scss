@@ -1,3 +1,25 @@
 // Place all the styles related to the Candidates controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.score{
+	text-align:center;
+	margin-left:22%;
+	margin-right:22%;
+	font-size:30px;
+	color:orange;
+	background-color:gray;
+	border-radius:10px;
+}
+.c{
+	text-align:center;
+	margin-left:25%;
+	margin-right:25%;
+	font-size:50px;
+	color:orange;
+	background-color:gray;
+}
+.c img{
+	margin-left:30%;
+	margin-right:30%;
+}

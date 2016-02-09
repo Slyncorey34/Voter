@@ -14567,3 +14567,1904 @@ Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 
 
 Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:01:14 -0500
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:07:17 -0500
+Processing by HomeController#intro as HTML
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/intro.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home.self-afdddf71300f16b1589ac460bc0dfa2986bd563420ec758303e75881b97d6eee.css?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:07:17 -0500
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:07:17 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.6ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:08:20 -0500
+Processing by HomeController#intro as HTML
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/intro.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/home.self-afdddf71300f16b1589ac460bc0dfa2986bd563420ec758303e75881b97d6eee.css?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:08:20 -0500
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:08:20 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (84.2ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:09:03 -0500
+Processing by HomeController#intro as HTML
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/intro.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/home.self-a58792a6807bf588222f817900e2a911cbb6920e0435b1060f5ae050d89bf799.css?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:09:03 -0500
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:09:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.4ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:09:14 -0500
+Processing by HomeController#intro as HTML
+  [1m[35mVoter Load (0.2ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/intro.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/home.self-5e91a0fac2cee51d150e52300bb61b6c4d75d0014e2ed1fe0441efa27afdd60d.css?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:09:14 -0500
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:09:14 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.8ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:09:23 -0500
+Processing by HomeController#intro as HTML
+  [1m[36mVoter Load (0.3ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/intro.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/home.self-8c5864942234a62ff6fa6fe5f1aea53d99e65f954e26f75efa4ca2706a8084d2.css?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:09:23 -0500
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:09:23 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.1ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:09:33 -0500
+Processing by HomeController#intro as HTML
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/intro.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home.self-a94d6dfb31c9e3ac683edf4f2498ce988f33330d453dcbf6b18c355762d56505.css?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:09:33 -0500
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:09:33 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (105.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.2ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:09:49 -0500
+Processing by HomeController#intro as HTML
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/intro.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/candidates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:09:49 -0500
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:09:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.9ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.2ms)
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:18:32 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-4108ebe2cf2a28860aecdaa6cc06e7cb50b5ba4844821a35e48c94ee5265f507.css?body=1" for ::1 at 2016-02-09 18:18:32 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:18:57 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/candidates.self-4108ebe2cf2a28860aecdaa6cc06e7cb50b5ba4844821a35e48c94ee5265f507.css?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:18:57 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:19:06 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.2ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/candidates.self-4108ebe2cf2a28860aecdaa6cc06e7cb50b5ba4844821a35e48c94ee5265f507.css?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:19:06 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:19:19 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-0652f16073050288edf745e4cab424de46d26e074179746f64f11218e0cb6829.css?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:19:19 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:19:31 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/candidates.self-a19e936ec642afe573de3d1fc60d8e989bbac177c4742c27ae0003c2a06878b2.css?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:19:31 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:19:37 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.3ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/candidates.self-c753d88f57acc72d94b52d5090e307e1faf08fcafdf80cb1c0249d6fd06c6cea.css?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:19:37 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:24:08 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-05f138131e5c67cca15e18269b8c66131e8b87b93ca231f294da9894097d00c7.css?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:24:08 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:24:14 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-7100c2b07b8720536f6fe49fbe9befc027094b1cc5de132061205569b01b6e54.css?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:24:14 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:24:22 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-408ad0d0b398b210c52585265638c4e182781c83bb20383e9cf3cae7c9ca6772.css?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:24:22 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:24:43 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-49caf7842d257244d7d1532ecbb656d0b20959d588b312eb0fa834dc619d0a76.css?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:24:43 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:24:52 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-fadcb8c4154354eadbcfd488b619c5cf5983ff2c5be33b43a4ad77a118de7acd.css?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:24:52 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:25:09 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/candidates.self-363894967a7dd258f4504f1df3ef98847b09eb49db7c5ed89bb6ef7e18af9b9b.css?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:25:09 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:25:21 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-268e5c80f8f23f510ba37641a47f22916dd6c4fa7d705b35e42dc1ec1437a21f.css?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:25:21 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:25:26 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-ab9d4b2d39e0d28756379507c427e024903d5f74a909c42cbdeb669078adcdf6.css?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:25:27 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:25:31 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/candidates.self-363894967a7dd258f4504f1df3ef98847b09eb49db7c5ed89bb6ef7e18af9b9b.css?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:25:31 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:26:06 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/candidates.self-3260225bbbd1f46ec3df90595efeaa789ea67919eb882c8925f8af82d3140283.css?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:26:06 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:26:12 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-2616052cc9cbcbd7e7592b707288565cd9629bd27214675c6f97056d1edafe35.css?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:26:12 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:26:23 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-16f659ef2ec825ef186ef41ad8f4b45640dfa610a7cf8e02710da0066626cd28.css?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:26:23 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:26:41 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/candidates.self-5eb7690ba42c78f1ffdc070997e88b23ccfe61a1d1df2e7a70cd1400235e7e86.css?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:26:41 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-09 18:27:00 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 1]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-71890f13a1b9fede013762ad4a12ce261aebcefbdf9e0c830d192af371db96a1.css?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-09 18:27:00 -0500
+
+
+Started GET "/" for ::1 at 2016-02-09 18:32:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 237ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vintage_flag.jpg" for ::1 at 2016-02-09 18:32:54 -0500
+
+
+Started GET "/voters/new" for ::1 at 2016-02-09 18:32:57 -0500
+Processing by VotersController#new as HTML
+  Rendered voters/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 87ms (Views: 76.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/voters" for ::1 at 2016-02-09 18:33:03 -0500
+Processing by VotersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EL2jQ78zmUKPxwqTiIekCuxvoj6arxRpMiUA6st5Szq1+zRX4wNf11tGAATVQa+zQ3bEL6DcRcQh+nBJCg1slA==", "voter"=>{"email"=>"w@w", "password"=>"[FILTERED]"}, "commit"=>"Create Voter"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "voters" ("email", "password", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "w@w"], ["password", "1234"], ["conVal", 0], ["libVal", 0], ["created_at", "2016-02-09 23:33:03.351703"], ["updated_at", "2016-02-09 23:33:03.351703"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/intro
+Completed 302 Found in 10ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-09 18:33:03 -0500
+Processing by HomeController#intro as HTML
+  [1m[36mVoter Load (0.2ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered home/intro.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 26.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/application.js" for ::1 at 2016-02-09 18:33:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.7ms)

@@ -1,12 +1,21 @@
-<p>A look at: <%= @c.fname %> <%= @c.lname %></p>
+<div class="c">
+<p>
+	A look at: <%= @c.fname %> <%= @c.lname %>
+</p>
 <%= image_tag @c.avatar.url(:medium) %>
-<p>Who is a: <%= @c.party %></p>
-
+<p>
+	Who is a: <%= @c.party %>
+</p>
+</div>
 
 <div class="score">
 Your Quiz Score is:
+</div>
+<div class="score">
 Conservative Percentage:
 <%=@v.conVal %>
+</div>
+<div class="score">
 Liberal Percentage: 
 <%=@v.libVal %>
 </div>
