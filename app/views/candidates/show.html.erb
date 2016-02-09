@@ -2,3 +2,11 @@
 <%= image_tag @c.avatar.url(:medium) %>
 <p>Who is a: <%= @c.party %></p>
 
+
+<div class="score">
+Your Quiz Score is:
+Conservative Percentage:
+<%=@v.conVal %>
+Liberal Percentage: 
+<%=@v.libVal %>
+</div>
