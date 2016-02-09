@@ -20,7 +20,7 @@ body {
 	background-size: 100%;
 
 }
-h1 {
+#logo {
 	font-family: Lobster, cursive;
 	color: #FFF0CC;
 	margin-left: 2%;
@@ -95,7 +95,7 @@ h1 {
 	padding: 5px;
 	border-radius: 5px;
 }
-h3 {
+#cands_index {
 	color: cadetblue;
 	width: 100px;
 	margin-left: 35%;
