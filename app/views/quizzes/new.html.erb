@@ -1,14 +1,26 @@
 <!-- QUIZ LIVES HERE -->
+<!-- Questions written so that Yes : lib No : con -->
+
 <%=form_for @quiz do |q|%>
+<p>Should abortion remain legal?</p>
 <%=q.text_field :answer1%>
+<p>Should gay marriage remain legal?</p>
 <%=q.text_field :answer2%>
+<p>Should college tuition be paid by the government?</p>
 <%=q.text_field :answer3%>
+<p>Should health care be provided as a right?</p>
 <%=q.text_field :answer4%>
+<p>Should the country have stricter gun control?</p>
 <%=q.text_field :answer5%>
+<p>Should the US accept Syrian refugees?</p>
 <%=q.text_field :answer6%>
+<p>Should there be a legal path to citizenship for undocumented immigrants?</p>
 <%=q.text_field :answer7%>
+<p>Increase the minimum wage?</p>
 <%=q.text_field :answer8%>
+<p>Should we separate prayer from schools?</p>
 <%=q.text_field :answer9%>
+<p>Should affirmative action remain in place?</p>
 <%=q.text_field :answer10%>
 <%=q.submit%>
 <%end%>
