@@ -15,6 +15,7 @@ class QuizzesController < ApplicationController
     @quiz = Quiz.new(quiz_params)
     @quiz.voter_id = current_voter.id
     if @quiz.save
+      # if @quiz.answer1 = "yes" && @quiz.answer = "yes" && @quiz.answer="yes" && @quiz.answer = "yes" && @quiz.answer = "yes" && @quiz.answer = "yes" && @quiz.answer &&
       redirect_to quiz_path(@quiz) 
     else
      render :new 

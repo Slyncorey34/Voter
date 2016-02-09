@@ -9,11 +9,12 @@ class SessionsController < ApplicationController
 			session[:voter_id] = @voter.id
 			redirect_to '/intro'
 		else
-			redirect_to new_session_path
+			redirect_to login_path
 		end
   end
 
   def destroy
-    @voter.delete
+    session[:user_id] = nil
+    redirect_to root_path
   end
 end
