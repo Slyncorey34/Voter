@@ -14,14 +14,26 @@ class QuizzesController < ApplicationController
     @quiz = Quiz.new(quiz_params)
     @quiz.voter_id = current_voter.id
     @voter= current_voter
-    @voter.libVal =
-    @voter.conVal = 
+    @voter.libVal = current_voter.id.libVal
+    @voter.conVal = current_voter.id.libVal
+    @answers = [current_voter.id.libVal].push &&
     if @quiz.save
+      # if params = libVals
+        params.each  do |params|
+       puts q
+       puts q.current_voter.libval
+     end
+
       # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
     #
      flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
     end
   end
+
+  # def update
+  #   @voter.libVal=
+  #   @voter.conVal=
+  # end
 
   def find_can
     if current_voter.libVal > 80
@@ -50,7 +62,6 @@ class QuizzesController < ApplicationController
   def quiz_params
     params.require(:quiz).permit(:voter_id, :answer1, :answer2, :answer3, :answer4, :answer5, :answer6, :answer7, :answer8, :answer9, :answer10)
   end
-
 end
 
 
