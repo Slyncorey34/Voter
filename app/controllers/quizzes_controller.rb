@@ -25,30 +25,25 @@ class QuizzesController < ApplicationController
           @voter.conVal += 10
           @voter.save
         else
-          puts "TRUUUUUUUUUUMMMMPPPP"
+          render :new 
+          flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
         end
-      end
-      # current_voter.libVal=indexcount(@answers, L)*10;
-      # current_voter.conVal=indexcount(@answers, V)*10
-
-      # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
-      # if current_voter.libVal > 80
-      #   redirect_to candidate_path(lname:"Sanders")
-      # elsif current_voter.conVal > 85
-      #   redirect_to candidate_path(lname:"Trump")
-      # elsif current_voter.libVal > 30 && current_voter.conVal > 1
-      #   redirect_to candidate_path(lname:"Clinton")
-      # elsif current_voter.libVal > 15 && current_voter.conVal > 20
-      #   redirect_to candidate_path(lname:"Rubio")
-      # elsif current_voter.conVal > 70 && current_voter.conVal < 99
-      #   redirect_to candidate_path(lname:"Cruz")
-
-
-    else
-     render :new 
-     flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
     end
-  end
+    end
+
+        # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
+      if @voter.libVal > 80
+      redirect_to candidate_path(id:3)
+    elsif @voter.conVal > 85
+      redirect_to candidate_path(id:1)
+    elsif @voter.libVal > 30 && @voter.conVal > 1
+      redirect_to candidate_path(id:2)
+    elsif @voter.libVal > 15 && @voter.conVal > 20
+      redirect_to candidate_path(id:4)
+    elsif @voter.conVal > 70 && @voter.conVal < 99
+      redirect_to candidate_path(id:5)  
+    end
+   end
 
   def show
    @quiz = Quiz.find(current_voter.id)
