@@ -30,7 +30,7 @@ Rails.application.routes.draw do
     resources :voters
     resources :sessions
     resources :candidates
-    resources :quizzes 
+    resources :quizzes
 
   # Example resource route with options:
   #   resources :products do

@@ -32,7 +32,7 @@ class QuizzesController < ApplicationController
 
     else
      render :new 
-     # add flash that they need to try again
+     flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
     end
   end
 
