@@ -16,18 +16,37 @@ class QuizzesController < ApplicationController
     @quiz.voter_id = current_voter.id
     if @quiz.save
 
-
+  
+      end
       # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
-      if current_voter.libVal > 80
-        redirect_to candidate_path(lname:"Sanders")
-      elsif current_voter.conVal > 85
-        redirect_to candidate_path(lname:"Trump")
-      elsif current_voter.libVal > 30 && current_voter.conVal > 1
-        redirect_to candidate_path(lname:"Clinton")
-      elsif current_voter.libVal > 15 && current_voter.conVal > 20
-        redirect_to candidate_path(lname:"Rubio")
-      elsif current_voter.conVal > 70 && current_voter.conVal < 99
-        redirect_to candidate_path(lname:"Cruz")
+      # if current_voter.libVal > 80
+      #   redirect_to candidate_path(lname:"Sanders")
+      # elsif current_voter.conVal > 85
+      #   redirect_to candidate_path(lname:"Trump")
+      # elsif current_voter.libVal > 30 && current_voter.conVal > 1
+      #   redirect_to candidate_path(lname:"Clinton")
+      # elsif current_voter.libVal > 15 && current_voter.conVal > 20
+      #   redirect_to candidate_path(lname:"Rubio")
+      # elsif current_voter.conVal > 70 && current_voter.conVal < 99
+      #   redirect_to candidate_path(lname:"Cruz")
+
+# If voter selects yes for answer1, add 1 and move to next question
+# If voter selects yes for answer2, add 1 and move to next question
+
+
+# def edit
+#     @quiz = Quiz.find(params[:id])
+#   end
+#   def update
+#     @quiz = Quiz.find(params[:id])
+#     if @quiz.update_attributes(quiz_params)
+#       redirect_to quiz show page with candidate match results
+#     else
+#       render new quiz Oops, please resubmit your answers"
+#     end
+
+
+
 
 
     else
