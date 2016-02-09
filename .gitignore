@@ -16,3 +16,4 @@
 !/log/.keep
 /tmp
 /log/*.*
+db/development.sqlite3
