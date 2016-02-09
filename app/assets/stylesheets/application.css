@@ -76,7 +76,7 @@ h1 {
 	width: 60%;
 	height: auto;
 	margin-left: 20%;
-	
+
 }
 .sign-up-form {
 	height: 200px;
@@ -142,16 +142,15 @@ h3 {
   	}
 
 footer li {
-	list-style-type: none; 
+	list-style-type: none;
 	display: inline-block;
 	margin-left: 5%;
 	margin-bottom: -4%;
 	}
 
 footer a{
-	text-decoration: none; 
+	text-decoration: none;
   	font-weight: bold;
   	margin: 80px;
   	color: #FFF1CE;
 	}*/
-
