@@ -11,7 +11,7 @@ class QuizzesController < ApplicationController
   end
 
   def create
-    
+
     @quiz = Quiz.new(quiz_params)
     @quiz.voter_id = current_voter.id
     @voter = Voter.where(id:current_voter.id).last
@@ -29,7 +29,7 @@ class QuizzesController < ApplicationController
           @voter.conVal += 10
           @voter.save
         else
-          render :new 
+          render :new
           flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
         end
       end
@@ -41,7 +41,7 @@ class QuizzesController < ApplicationController
       # if current_voter.libVal > 80
       #   redirect_to candidate_path(lname:"Sanders")
       # elsif current_voter.conVal > 85
-      #   redirect_to candidate_path(lname:"Trump")
+      #   redirect_to candidate_path(lname:"Trump" )
       # elsif current_voter.libVal > 30 && current_voter.conVal > 1
       #   redirect_to candidate_path(lname:"Clinton")
       # elsif current_voter.libVal > 15 && current_voter.conVal > 20
@@ -68,7 +68,7 @@ class QuizzesController < ApplicationController
 
 
     else
-     render :new 
+     render :new
      flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
 
     end
@@ -85,7 +85,7 @@ class QuizzesController < ApplicationController
       redirect_to candidate_path(id:4)
     elsif @voter.conVal > 70 && @voter.conVal < 99
       redirect_to candidate_path(id:5)
-    else 
+    else
       redirect_to new_quiz_path
       flash[:alert] = "That didn't work. Try again?"
 
@@ -97,14 +97,14 @@ class QuizzesController < ApplicationController
 
   end
 
- 
+
 
   private
 
   def quiz_params
     params.require(:quiz).permit(:voter_id, :answer1, :answer2, :answer3, :answer4, :answer5, :answer6, :answer7, :answer8, :answer9, :answer10)
   end
-  
+
 end
 
 
