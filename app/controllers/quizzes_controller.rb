@@ -13,15 +13,28 @@ class QuizzesController < ApplicationController
   def create
     @quiz = Quiz.new(quiz_params)
     @quiz.voter_id = current_voter.id
-    @voter= current_voter
+    @voter= Voter.where(id: current_voter.id).last
     @voter.libVal = current_voter.id.libVal
     @voter.conVal = current_voter.id.libVal
-    @answers = [current_voter.id.libVal].push &&
     if @quiz.save
-      # if params = libVals
-        params.each  do |params|
+
+        params.each  do |q|
        puts q
-       puts q.current_voter.libval
+
+    @answers = params.each
+    @quiz.answers.each do |params|
+      puts q
+      if @answer =
+
+
+         puts [(@voter.libVal + 1) , (@voter.conVal) + 1]
+
+         puts [(@voter.libVal).to_i + 5 , ((@voter.conVal).to_i + 5]
+
+        Quiz.where(["user_id = ? and answer_id "])
+       # if params = libVals
+      #  while params == "yes"
+      #  puts q.current_voter.libval
      end
 
       # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
