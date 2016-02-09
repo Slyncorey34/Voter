@@ -32,8 +32,8 @@ class QuizzesController < ApplicationController
           flash[:notice] = "There was an error handling your quiz. Please correct the missing fields."
         end
       end
-    end
-    if @voter.libVal > 80
+        # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
+      if @voter.libVal > 80
       redirect_to candidate_path(id:3)
     elsif @voter.conVal > 85
       redirect_to candidate_path(id:1)
@@ -47,13 +47,8 @@ class QuizzesController < ApplicationController
       redirect_to new_quiz_path
       flash[:alert] = "That didn't work. Try again?"
     end
-  end
-        
-  def find_candidate
-    @voter = Voter.where(id:current_voter.id).last
-        # libVals for each candidate: Trump: 1, Cruz: 15, Rubio: 30, Clinton: 80, Sanders: 99. conVals fill out the rest of the metric to 100.
-      
-  end
+    end
+   end
 
   def show
    @quiz = Quiz.find(current_voter.id)
