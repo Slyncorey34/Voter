@@ -9,7 +9,7 @@ class CandidatesController < ApplicationController
   end
 
   def show
-    @v = Voter.where(id:current_voter.id).last
+    @v = current_voter
   	@c = Candidate.find(params[:id])
   	# how do we display a candidate without doing it by id?
   end

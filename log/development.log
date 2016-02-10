@@ -16468,3 +16468,3213 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.7ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 10:18:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 311ms (Views: 300.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vintage_flag.jpg" for ::1 at 2016-02-10 10:18:46 -0500
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-10 10:19:07 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/candidates_controller.rb:12:in `show'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.6ms)
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-10 10:19:42 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCandidate Load (0.4ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `conVal' for nil:NilClass):
+    13: </div>
+    14: <div class="score">
+    15: Conservative Percentage:
+    16: <%=@v.conVal %>
+    17: </div>
+    18: <div class="score">
+    19: Liberal Percentage: 
+  app/views/candidates/show.html.erb:16:in `_app_views_candidates_show_html_erb__1618411664531834369_70190997155560'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.7ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 10:19:56 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vintage_flag.jpg" for ::1 at 2016-02-10 10:19:56 -0500
+
+
+Started GET "/voters/new" for ::1 at 2016-02-10 10:20:03 -0500
+Processing by VotersController#new as HTML
+  Rendered voters/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 43ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/voters" for ::1 at 2016-02-10 10:20:11 -0500
+Processing by VotersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G3VJ4NmHzrA4UUU+yghDOEWuGLWAgcIbmayXlihvwsbN+tahC5CMdWQeuMI/FAtpOZnunsB+yCg4TYHnAJ7B5g==", "voter"=>{"email"=>"w@w", "password"=>"[FILTERED]"}, "commit"=>"Create Voter"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "voters" ("email", "password", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "w@w"], ["password", "1234"], ["conVal", 0], ["libVal", 0], ["created_at", "2016-02-10 15:20:11.309378"], ["updated_at", "2016-02-10 15:20:11.309378"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/intro
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-10 10:20:11 -0500
+Processing by HomeController#intro as HTML
+  [1m[35mVoter Load (0.2ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/intro.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 23.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/application.js" for ::1 at 2016-02-10 10:20:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.5ms)
+
+
+Started GET "/quizzes/new" for ::1 at 2016-02-10 10:20:36 -0500
+Processing by QuizzesController#new as HTML
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered quizzes/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/quizzes" for ::1 at 2016-02-10 10:20:47 -0500
+Processing by QuizzesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kA6yCabRJG8MfqICG5943tT5r2CJLffdGc3iBYep4a1GgS1IdMZmqlAxX/7ugzCPqM5ZS8nS/e64LPR0r1jijQ==", "quiz"=>{"answer1"=>"no", "answer2"=>"no", "answer3"=>"no", "answer4"=>"no", "answer5"=>"no", "answer6"=>"no", "answer7"=>"no", "answer8"=>"no", "answer9"=>"no", "answer10"=>"no"}, "commit"=>"Create Quiz"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "quizzes" ("answer1", "answer2", "answer3", "answer4", "answer5", "answer6", "answer7", "answer8", "answer9", "answer10", "voter_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["answer1", "no"], ["answer2", "no"], ["answer3", "no"], ["answer4", "no"], ["answer5", "no"], ["answer6", "no"], ["answer7", "no"], ["answer8", "no"], ["answer9", "no"], ["answer10", "no"], ["voter_id", 3]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 10], ["updated_at", "2016-02-10 15:20:47.874175"], ["id", 3]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 20], ["updated_at", "2016-02-10 15:20:47.880120"], ["id", 3]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 30], ["updated_at", "2016-02-10 15:20:47.882466"], ["id", 3]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 40], ["updated_at", "2016-02-10 15:20:47.884474"], ["id", 3]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 50], ["updated_at", "2016-02-10 15:20:47.886994"], ["id", 3]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 60], ["updated_at", "2016-02-10 15:20:47.890903"], ["id", 3]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 70], ["updated_at", "2016-02-10 15:20:47.892857"], ["id", 3]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 80], ["updated_at", "2016-02-10 15:20:47.895065"], ["id", 3]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 90], ["updated_at", "2016-02-10 15:20:47.897046"], ["id", 3]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 100], ["updated_at", "2016-02-10 15:20:47.899036"], ["id", 3]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/candidates/1
+Completed 302 Found in 35ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-10 10:20:47 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for ::1 at 2016-02-10 10:26:20 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 10:26:20 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/voters/new" for ::1 at 2016-02-10 10:26:21 -0500
+Processing by VotersController#new as HTML
+  Rendered voters/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/voters" for ::1 at 2016-02-10 10:26:29 -0500
+Processing by VotersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BIjVkRpuaTc6BhDw53TAZcFp9DEbHW0WLqmFiYHZe9vSB0rQyHkr8mZJ7QwSaIg0vV4CGlviZyWPSJP4qSh4+w==", "voter"=>{"email"=>"h@h", "password"=>"[FILTERED]"}, "commit"=>"Create Voter"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "voters" ("email", "password", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "h@h"], ["password", "1234"], ["conVal", 0], ["libVal", 0], ["created_at", "2016-02-10 15:26:29.286649"], ["updated_at", "2016-02-10 15:26:29.286649"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/intro
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-10 10:26:29 -0500
+Processing by HomeController#intro as HTML
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/intro.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application.js" for ::1 at 2016-02-10 10:26:29 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.1ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.8ms)
+
+
+Started GET "/quizzes/new" for ::1 at 2016-02-10 10:26:32 -0500
+Processing by QuizzesController#new as HTML
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered quizzes/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/quizzes" for ::1 at 2016-02-10 10:26:40 -0500
+Processing by QuizzesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TGa2SWPWHuphbcUYnXzkp2xtnNvbEMtDIfbzfAyBIDia6SkIscFcLz0iOORoYKz2EFpq8JvvwXCAF+UNJHAjGA==", "quiz"=>{"answer1"=>"no", "answer2"=>"no", "answer3"=>"no", "answer4"=>"no", "answer5"=>"no", "answer6"=>"no", "answer7"=>"no", "answer8"=>"no", "answer9"=>"no", "answer10"=>"no"}, "commit"=>"Create Quiz"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mVoter Load (0.3ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "quizzes" ("answer1", "answer2", "answer3", "answer4", "answer5", "answer6", "answer7", "answer8", "answer9", "answer10", "voter_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["answer1", "no"], ["answer2", "no"], ["answer3", "no"], ["answer4", "no"], ["answer5", "no"], ["answer6", "no"], ["answer7", "no"], ["answer8", "no"], ["answer9", "no"], ["answer10", "no"], ["voter_id", 4]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 10], ["updated_at", "2016-02-10 15:26:40.718622"], ["id", 4]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 20], ["updated_at", "2016-02-10 15:26:40.720704"], ["id", 4]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 30], ["updated_at", "2016-02-10 15:26:40.723107"], ["id", 4]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 40], ["updated_at", "2016-02-10 15:26:40.725278"], ["id", 4]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 50], ["updated_at", "2016-02-10 15:26:40.727343"], ["id", 4]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 60], ["updated_at", "2016-02-10 15:26:40.729774"], ["id", 4]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 70], ["updated_at", "2016-02-10 15:26:40.732181"], ["id", 4]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 80], ["updated_at", "2016-02-10 15:26:40.734215"], ["id", 4]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["conVal", 90], ["updated_at", "2016-02-10 15:26:40.736102"], ["id", 4]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "voters" SET "conVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["conVal", 100], ["updated_at", "2016-02-10 15:26:40.738083"], ["id", 4]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/candidates/1
+Completed 302 Found in 30ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/candidates/1" for ::1 at 2016-02-10 10:26:40 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoter Load (0.2ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for ::1 at 2016-02-10 10:26:43 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 10:26:43 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-02-10 10:26:56 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-02-10 10:27:00 -0500
+Processing by CandidatesController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7xO8IlrqJJlLHfxk7t+F3S2iZSh045Bg8TbzG0P6xiQ5nCNjiP1mXBdSAZgbw82MUZWTAzQcmlNQ1+VqawvFBA==", "email"=>"h@h", "password"=>"[FILTERED]", "commit"=>"Create account"}
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/voters/new" for ::1 at 2016-02-10 10:28:16 -0500
+Processing by VotersController#new as HTML
+  Rendered voters/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/candidates.self-71890f13a1b9fede013762ad4a12ce261aebcefbdf9e0c830d192af371db96a1.css?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 10:28:16 -0500
+
+
+Started POST "/voters" for ::1 at 2016-02-10 10:28:26 -0500
+Processing by VotersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YMJe6TwkGkgAkNYy8XikiyteC94C4w0SzwcWRlg/Ho22TcGo7jNYjVzfK84EZOzaV2n99UIcByFu5gA3cM4drQ==", "voter"=>{"email"=>"u@u", "password"=>"[FILTERED]"}, "commit"=>"Create Voter"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "voters" ("email", "password", "conVal", "libVal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "u@u"], ["password", "1234"], ["conVal", 0], ["libVal", 0], ["created_at", "2016-02-10 15:28:26.653883"], ["updated_at", "2016-02-10 15:28:26.653883"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/intro
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/intro" for ::1 at 2016-02-10 10:28:26 -0500
+Processing by HomeController#intro as HTML
+  [1m[36mVoter Load (0.3ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered home/intro.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/application.js" for ::1 at 2016-02-10 10:28:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/dylanzklett/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.2ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dylanzklett/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.0ms)
+
+
+Started GET "/quizzes/new" for ::1 at 2016-02-10 10:28:29 -0500
+Processing by QuizzesController#new as HTML
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered quizzes/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/quizzes" for ::1 at 2016-02-10 10:28:41 -0500
+Processing by QuizzesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B+Up9hzdRxFco3OhTjXQ6D/qU3QId4uy9NIG73ScBUvRara3zsoF1ADsjl27KZi5Q92lX0iIgYFVMxCeXG0Gaw==", "quiz"=>{"answer1"=>"yes", "answer2"=>"yes", "answer3"=>"yes", "answer4"=>"yes", "answer5"=>"yes", "answer6"=>"yes", "answer7"=>"yes", "answer8"=>"yes", "answer9"=>"yes", "answer10"=>"yes"}, "commit"=>"Create Quiz"}
+  [1m[36mVoter Load (0.1ms)[0m  [1mSELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ?  ORDER BY "voters"."id" DESC LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "quizzes" ("answer1", "answer2", "answer3", "answer4", "answer5", "answer6", "answer7", "answer8", "answer9", "answer10", "voter_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["answer1", "yes"], ["answer2", "yes"], ["answer3", "yes"], ["answer4", "yes"], ["answer5", "yes"], ["answer6", "yes"], ["answer7", "yes"], ["answer8", "yes"], ["answer9", "yes"], ["answer10", "yes"], ["voter_id", 5]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["libVal", 10], ["updated_at", "2016-02-10 15:28:41.525630"], ["id", 5]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["libVal", 20], ["updated_at", "2016-02-10 15:28:41.529188"], ["id", 5]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["libVal", 30], ["updated_at", "2016-02-10 15:28:41.534322"], ["id", 5]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["libVal", 40], ["updated_at", "2016-02-10 15:28:41.536587"], ["id", 5]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["libVal", 50], ["updated_at", "2016-02-10 15:28:41.538953"], ["id", 5]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["libVal", 60], ["updated_at", "2016-02-10 15:28:41.541130"], ["id", 5]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["libVal", 70], ["updated_at", "2016-02-10 15:28:41.543090"], ["id", 5]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["libVal", 80], ["updated_at", "2016-02-10 15:28:41.547088"], ["id", 5]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?[0m  [["libVal", 90], ["updated_at", "2016-02-10 15:28:41.549429"], ["id", 5]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "voters" SET "libVal" = ?, "updated_at" = ? WHERE "voters"."id" = ?  [["libVal", 100], ["updated_at", "2016-02-10 15:28:41.551547"], ["id", 5]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/candidates/3
+Completed 302 Found in 34ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/candidates/3" for ::1 at 2016-02-10 10:28:41 -0500
+Processing by CandidatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mVoter Load (0.1ms)[0m  SELECT  "voters".* FROM "voters" WHERE "voters"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT  "candidates".* FROM "candidates" WHERE "candidates"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered candidates/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:08:32 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 11:14:23 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vintage_flag.jpg" for ::1 at 2016-02-10 11:14:23 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:14:27 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:19:12 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.3ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/candidates.self-66d629aec89f30f223977dcec1dab4cef24afa6f6c0af1db25694a7d6d3e7bf3.css?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:19:12 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:19:28 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-4c6b2e6e81de15352f99e2d7540850c97fef3b90b1db68e9c64363265280bb83.css?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:19:28 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:19:33 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-9508a546dbec53e0ba2cf12ad14e3a5fd098959b032e3f65a6ee3a1d5c2eba65.css?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:19:33 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:19:41 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.3ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/candidates.self-d5032b567e3342f6415e9f1dfae37fc90260fd3caf731b02ca9f13741ab12442.css?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:19:41 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:20:07 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/candidates.self-d5032b567e3342f6415e9f1dfae37fc90260fd3caf731b02ca9f13741ab12442.css?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:20:07 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:22:38 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-db3ba2e5ccfc86023c97c512e4b73964de4ecfda26b5c1185bb5c1c3600a0564.css?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:22:38 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:22:45 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-f9d2f5d9aa8a29db6157d6b015f185f279aa27f06a3a7ff36a2b876689154225.css?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:22:45 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:22:51 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-7a85a8113b0aafdec9407882c8920d019f6e265369cd6535c30cbd9d829cd7c8.css?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:22:51 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:04 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-c9629624d69ee88d90b2f8cd38c132b1362f92c6d079c4c16cf340a12de0b2d4.css?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:04 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:09 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-6a761617c52644a18712ddb4384442d3dd2fa38337a1c351ad7f46f1419e15d5.css?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:09 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:17 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-ca60ffdb900ed10fbb8699c2f794ee2f201d4966983fcff24b00c645aac06919.css?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:17 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:21 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-a9463bc2c312deb66dbd2ceb09441ca0d6ea428ee384bdc8f00d0302f634c0a0.css?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:22 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:30 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-32750be503f57cc5ddb0a14c8bab3308b37a668951a5ada9abb413519202d17a.css?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:31 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:34 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-17f1e675d3b81de47e72eb55954b30bf761a69d653671b2ebc68975a52c512cf.css?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:35 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:41 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-be22c9d5035164883e930e3546aa318b1d321e2a7cbafbb9220ac48aaaf76dad.css?body=1" for ::1 at 2016-02-10 11:23:41 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:41 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:41 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:41 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:41 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:41 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:41 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:42 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:23:58 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-4e419920ebe83c57020749c37d44342c6759cd371a395137b125a3572e35cc27.css?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:23:58 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:24:06 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 54.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-a81208d69beda0d02792594b8de2a0ff7c66f313cc1da8311e482dd199a043bb.css?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:24:06 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:24:21 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-543884cbe52032ec1c912c9d3cd3aee2108a06041ea34734ff1f93f67aa4fba8.css?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:24:22 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:25:34 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/candidates.self-543884cbe52032ec1c912c9d3cd3aee2108a06041ea34734ff1f93f67aa4fba8.css?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:25:34 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:25:44 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-4b077093a01a7efb5258cab89604428976854ac92da5374b3b0291cc128f47eb.css?body=1" for ::1 at 2016-02-10 11:25:44 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:44 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:44 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:44 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:25:44 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:44 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:25:44 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:25:45 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:25:50 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-bd097be866194e6d06f741536f617a5b70ea840bbf2c7c26414abd04b531751a.css?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:25:50 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:26:04 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-fa7e1feb4eb674c9dc8c13a6928b6510006e59d8f960e14860d1dfcec8645831.css?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:26:04 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:26:12 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 58ms (Views: 57.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-e4a89eee58ae2c3453d4e865790ef63e3a7b2625eda67d7b87be2573b440810f.css?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:26:12 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:26:19 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-22e861668bf2dda1baec42a9853124f3e3f2fcf131d76dbccc503a9e706875f1.css?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:26:19 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:26:27 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.4ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/candidates.self-9dd82f4f768475ba02631c6eab6af3a5d09cb53c4a2cc4127029e91b73a45220.css?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:26:27 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:26:33 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-c6604ab2eb9ebc87abc857948fb8841cd1649cad3c8455c30a29bdb7d5968c83.css?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:26:33 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:29:03 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/candidates.self-c6604ab2eb9ebc87abc857948fb8841cd1649cad3c8455c30a29bdb7d5968c83.css?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:29:03 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:29:13 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-385c83e1e146b37935b16765c7f38784eceea3fdd16258da588cb25f9440afd0.css?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:29:13 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:29:17 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-83a69b0a1d6c0232fc4e72051548081e8338bd07704cd0be90dfed2cd3ecf486.css?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:29:17 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:29:24 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-347bfdd974897fc3d6ae605506874bcb4c836a5e30d7859dd5998feb04608b5a.css?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:29:24 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:29:34 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/candidates.self-32b4959d3f74b1cc8d65e6de3ba0a057bfd1c84188e58e23c9c87fe434cb318a.css?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:29:34 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:29:40 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-a33ddac3e6e18653e91afdba335e8754d287c5a31757fd071ec42790f74a070c.css?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:40 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:41 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:41 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:41 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:41 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:29:41 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:29:46 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-bdad1f63985bf860fd95c44b32facbdac6b17ba2f9b791b606a03d446fc9b5bb.css?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:29:46 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:40:22 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/candidates.self-3fa626d5350b31bf563ccacb4183449e0b7f4a2d4dd63ad24638b7af28ffcbd4.css?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:22 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:23 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:23 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:40:23 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:40:31 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-893433b98da4d14540fbd406a4c0b50c1e2d04e057f771c171f6ffdf4d028fa4.css?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:40:32 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:40:36 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/candidates.self-3fa626d5350b31bf563ccacb4183449e0b7f4a2d4dd63ad24638b7af28ffcbd4.css?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:40:36 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:40:57 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/candidates.self-3fa626d5350b31bf563ccacb4183449e0b7f4a2d4dd63ad24638b7af28ffcbd4.css?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:40:57 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:41:07 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/candidates.self-3fa626d5350b31bf563ccacb4183449e0b7f4a2d4dd63ad24638b7af28ffcbd4.css?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:07 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:08 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:08 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:08 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:08 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:08 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:41:08 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:41:33 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.1ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/candidates.self-3fa626d5350b31bf563ccacb4183449e0b7f4a2d4dd63ad24638b7af28ffcbd4.css?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:41:33 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:41:46 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/candidates.self-82deb5de136c0a309e0840a6da5715f1657813e48c2eafcfd9d556d32b90b988.css?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:41:46 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:41:52 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-3f8cc08d5e656d812f35018d4fa211e1401ef483a258b544bf286b07f8872c8f.css?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:41:52 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:42:58 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.1ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/candidates.self-3f8cc08d5e656d812f35018d4fa211e1401ef483a258b544bf286b07f8872c8f.css?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:42:58 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:44:15 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.3ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/candidates.self-3f8cc08d5e656d812f35018d4fa211e1401ef483a258b544bf286b07f8872c8f.css?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:44:16 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:44:29 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/candidates.self-3f8cc08d5e656d812f35018d4fa211e1401ef483a258b544bf286b07f8872c8f.css?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:44:29 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:44:43 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 63.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/candidates.self-79cffd7b1a2675541b9ae7434332307e81247b7afb62f5f3b0ddcb377b35d59e.css?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:44:43 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:44:57 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 58ms (Views: 57.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-c08837e9c63ee4a1b3d67ff6c5d49cda92b76ff178c9c65ae755f33159f97316.css?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:57 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:58 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:58 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:58 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:58 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:44:58 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:44:58 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:45:03 -0500
+Processing by CandidatesController#index as HTML
+  [1m[35mCandidate Load (0.2ms)[0m  SELECT "candidates".* FROM "candidates"
+  Rendered candidates/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/candidates.self-c324f943355cc4a5500620085141ac15aa0a02208e5111ca44ebe73b01b9b4b3.css?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:45:04 -0500
+
+
+Started GET "/candidates" for ::1 at 2016-02-10 11:52:02 -0500
+Processing by CandidatesController#index as HTML
+  [1m[36mCandidate Load (0.2ms)[0m  [1mSELECT "candidates".* FROM "candidates"[0m
+  Rendered candidates/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/attempts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/home.self-e627943d04596f5d1a5195bdb1bbe74fb12ad42d6479780768565b4762a14527.css?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/candidates.self-c324f943355cc4a5500620085141ac15aa0a02208e5111ca44ebe73b01b9b4b3.css?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/voter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/quiz.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/application.self-bdd702733df489f6bde5fee59efc17e20b60643a6adbc2e22489609d3f0ff584.css?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/attempts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/candidates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/quiz.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/voter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
+
+
+Started GET "/assets/application.self-81b4b9378a51a205b8f4283a2cde65e9143f6584ab427fcd064ec202c5867ae4.js?body=1" for ::1 at 2016-02-10 11:52:02 -0500
