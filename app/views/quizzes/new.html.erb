@@ -1,28 +1,39 @@
-<!-- QUIZ LIVES HERE -->
-<!-- Questions written so that Yes : lib No : con -->
+<div class="quizNav">
+	<%= render "quizzes/quizNav"%>
+</div>	
+<div class="quiz_instruction">
 
-<h1>How do you feel about these big issues? Answer "yes" or "no" to tell us how you feel!</h1>
+</div>
+<div class="quiz">
+	<p>Read each question, think about your view and values, then write "yes" or "no" in the answer field.</p><h5>Make sure to answer all 10 questions before submitting.</h5>
+	<%=form_for @quiz do |q|%>
+	<p>Should abortion remain legal?</p>
+	<div id="ans1">
+		<%=q.label "answer 1"%>
+	<%=q.text_field :answer1%>
+</div>
+	<p>Should gay marriage remain legal?</p>
+	<%=q.text_field :answer2%>
+	<p>Should college tuition be paid by the government?</p>
+	<%=q.text_field :answer3%>
+	<p>Should health care be provided as a right?</p>
+	<%=q.text_field :answer4%>
+	<p>Should the country have stricter gun control?</p>
+	<%=q.text_field :answer5%>
+	<p>Should the US accept Syrian refugees?</p>
+	<%=q.text_field :answer6%>
+	<p>Should there be a legal path to citizenship for undocumented immigrants?</p>
+	<%=q.text_field :answer7%>
+	<p>Increase the minimum wage?</p>
+	<%=q.text_field :answer8%>
+	<p>Should we separate prayer from schools?</p>
+	<%=q.text_field :answer9%>
+	<p>Should affirmative action remain in place?</p>
+	<%=q.text_field :answer10%>
+	<br>
+	<div id="quiz-btn">
+	<%=q.submit "Submit"%>
+	</div>
+	<%end%>
+</div>
 
-<%=form_for @quiz do |q|%>
-<p>Should abortion remain legal?</p>
-<%=q.text_field :answer1%>
-<p>Should gay marriage remain legal?</p>
-<%=q.text_field :answer2%>
-<p>Should college tuition be paid by the government?</p>
-<%=q.text_field :answer3%>
-<p>Should health care be provided as a right?</p>
-<%=q.text_field :answer4%>
-<p>Should the country have stricter gun control?</p>
-<%=q.text_field :answer5%>
-<p>Should the US accept Syrian refugees?</p>
-<%=q.text_field :answer6%>
-<p>Should there be a legal path to citizenship for undocumented immigrants?</p>
-<%=q.text_field :answer7%>
-<p>Increase the minimum wage?</p>
-<%=q.text_field :answer8%>
-<p>Should we separate prayer from schools?</p>
-<%=q.text_field :answer9%>
-<p>Should affirmative action remain in place?</p>
-<%=q.text_field :answer10%>
-<%=q.submit%>
-<%end%>
