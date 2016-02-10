@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   get '/logout', to: 'sessions#destroy'
   post '/login', to: 'candidates#index'
+  
 
   # get '/delete', to: 'home#welcome'
   # Example of regular route:

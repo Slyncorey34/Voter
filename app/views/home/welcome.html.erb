@@ -2,7 +2,7 @@
 	<div class="homepage">
 		<p>Match with candidates on the issues you care about most.
 		</p>
-
+		<%= flash[:alert] if flash[:alert] %>
 		<div id="log-btn">
 			<%=link_to 'Log In', new_session_path%>
 		</div>
