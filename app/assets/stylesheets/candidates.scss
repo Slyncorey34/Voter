@@ -1,0 +1,45 @@
+// Place all the styles related to the Candidates controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.score{
+	text-align:center;
+	margin-left:22%;
+	margin-right:22%;
+	font-size:30px;
+	color:orange;
+	background-color:gray;
+	border-radius:10px;
+}
+.c{
+	text-align:center;
+	margin-left:25%;
+	margin-right:25%;
+	font-size:50px;
+	color:orange;
+	background-color:gray;
+}
+.c img{
+	margin-left:30%;
+	margin-right:30%;
+}
+.prezPic{
+	margin-left:30%;
+	margin-right:35%;
+}
+.prezName{
+	margin-left:32%;
+	margin-right:26%;
+	font-size: 35px;
+	color:orange;
+	text-align:center;
+	background-color:grey;
+}
+.CoC{
+	margin-left:30%;
+	margin-right:30%;
+	width:500px;
+	font-size:40px;
+	background-color:orange;
+	text-align:center;
+}
