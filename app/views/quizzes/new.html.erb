@@ -1,39 +1,59 @@
 <div class="quizNav">
-	<%= render "quizzes/quizNav"%>
+	<%= render "layouts/navBar"%>
 </div>	
 <div class="quiz_instruction">
 
 </div>
 <div class="quiz">
-	<p>Read each question, think about your view and values, then write "yes" or "no" in the answer field.</p><h5>Make sure to answer all 10 questions before submitting.</h5>
-	<%=form_for @quiz do |q|%>
-	<p>Should abortion remain legal?</p>
-	<div id="ans1">
-		<%=q.label "answer 1"%>
-	<%=q.text_field :answer1%>
-</div>
-	<p>Should gay marriage remain legal?</p>
-	<%=q.text_field :answer2%>
-	<p>Should college tuition be paid by the government?</p>
-	<%=q.text_field :answer3%>
-	<p>Should health care be provided as a right?</p>
-	<%=q.text_field :answer4%>
-	<p>Should the country have stricter gun control?</p>
-	<%=q.text_field :answer5%>
-	<p>Should the US accept Syrian refugees?</p>
-	<%=q.text_field :answer6%>
-	<p>Should there be a legal path to citizenship for undocumented immigrants?</p>
-	<%=q.text_field :answer7%>
-	<p>Increase the minimum wage?</p>
-	<%=q.text_field :answer8%>
-	<p>Should we separate prayer from schools?</p>
-	<%=q.text_field :answer9%>
-	<p>Should affirmative action remain in place?</p>
-	<%=q.text_field :answer10%>
+	<div id="instr">
+		<p>Read each question, think about your view and values, then write <b>"yes" or "no"</b> in the answer field.</p>
+		<p><b>Make sure to answer all 10 questions before submitting.</b></p>
+	</div>
+<%=form_for @quiz do |q|%>
+	<div class="ans">
+		<p>Should abortion remain legal?</p>
+		<%=q.text_field :answer1%>
+	</div>
+	<div class="ans">
+		<p>Should gay marriage remain legal?</p>
+		<%=q.text_field :answer2%>
+	</div>
+	<div class="ans">
+		<p>Should college tuition be paid by the government?</p>
+		<%=q.text_field :answer3%>
+	</div>
+	<div class="ans">
+		<p>Should health care be provided as a right?</p>
+		<%=q.text_field :answer4%>
+	</div>
+	<div class="ans">
+		<p>Should the country have stricter gun control?</p>
+		<%=q.text_field :answer5%>
+	</div>
+	<div class="ans">
+		<p>Should the US accept Syrian refugees?</p>
+		<%=q.text_field :answer6%>
+	</div>
+	<div class="ans">
+		<p>Should there be a legal path to citizenship for undocumented immigrants?</p>
+		<%=q.text_field :answer7%>
+	</div>
+	<div class="ans">
+		<p>Increase the minimum wage?</p>
+		<%=q.text_field :answer8%>
+	</div>
+	<div class="ans">
+		<p>Should we separate prayer from schools?</p>
+		<%=q.text_field :answer9%>
+	</div>
+	<div class="ans">
+		<p>Should affirmative action remain in place?</p>
+		<%=q.text_field :answer10%>
+	</div>
 	<br>
 	<div id="quiz-btn">
-	<%=q.submit "Submit"%>
+		<%=q.submit %>
 	</div>
-	<%end%>
-</div>
+<%end%>
+
 

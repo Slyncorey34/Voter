@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby "2.3.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Allows attached files to models
 gem "paperclip", "~> 4.3"
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
