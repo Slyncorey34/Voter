@@ -10,9 +10,11 @@ class VotersController < ApplicationController
       @voter.libVal = 0
   	if @voter.save
       session[:voter_id] = @voter.id
+      flash[:notice] = "User signed in successfully."
     	redirect_to '/intro'
  	  else
- 		render 'new' 
+ 		render 'new'
+    flash[:notice] = "There was a problem signing you in."
   	end
   end
 
